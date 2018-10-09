@@ -16,3 +16,8 @@
 .icon-flag:before { content: '\e80e'; } /* '' */
 .icon-plus:before { content: '\e80f'; } /* '' */
 .icon-yes:before { content: '\e810'; } /* '' */
+.icon-sun:before { content: '\e811'; } /* '' */
+.icon-no:before { content: '\e812'; } /* '' */
+.icon-wind-no:before { content: '\e813'; } /* '' */
+.icon-wind:before { content: '\e814'; } /* '' */
+.icon-snow:before { content: '\e815'; } /* '' */
