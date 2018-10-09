@@ -1,0 +1,55 @@
+/* Main Colors */
+$color-base: #fff;
+$color-primary: #006CB9;
+$color-secondary: #5DCB4E;
+$color-secondary-dark: #029D47;
+$color-bg-gray: #F3F3F3;
+/*$color-bg-gray-hover: #EAEAEA;*/
+$color-border-gray: #D7D4DC;
+
+$color-bg: $color-base;
+$color-text: #0E0E0E;
+$color-link: inherit;
+$color-link-hover: inherit;
+
+$config-colors: (
+    1: #F3901E,
+    2: #BFA811,
+    3: #9F4593,
+    4: #00A457,
+    5: #108CAC,
+    6: #E074AB
+);
+
+$link-opacity: .8;
+
+/* Fonts */
+$font-family: "Montserrat", sans-serif;
+$font-size: 14px;
+$font-weight: normal;
+$letter-spacing: normal;
+$line-height: normal;
+
+/* Screen sizes */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 320px,
+  md: 768px,
+  lg: 1280px,
+  xl: 1440px
+);
+
+$container-max-widths: (
+  xs: 100%,
+  sm: 100%,
+  md: 100%,
+  lg: 1280px,
+  xl: 1280px
+);
+$container-paddings: (
+  xs: 20px,
+  sm: 20px,
+  md: 30px,
+  lg: 70px,
+  xl: 70px
+);

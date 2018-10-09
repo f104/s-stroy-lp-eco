@@ -1,0 +1,54 @@
+script(src='assets/js/bundle.js?v=' + PACKAGE.version)
+//-
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-66936457-4")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-66936457-4');
+
+    script.
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter50433718 = new Ya.Metrika2({
+                        id:50433718,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+    noscript
+        div
+            img(src="https://mc.yandex.ru/watch/50433718" style="position:absolute; left:-9999px;" alt="")
+
+    script.
+      (function(document, window, src, site_id){
+        var s, r, t;
+        r = false;
+        s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = src;
+        s.onload = s.onreadystatechange = function() {
+          if (!r && (!this.readyState || this.readyState === 'complete')){
+            r = true;
+            rsJs._init(site_id,src);
+          }
+        };
+        t = document.getElementsByTagName('script')[0];
+        t.parentNode.insertBefore(s, t);
+      })(document, window, '//static-minicrm.riverstart.ru/bundle.js', '6KSzBTnz2DBrN73Pw');

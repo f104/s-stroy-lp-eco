@@ -1,0 +1,12 @@
+mixin tech-item-dop()
+    .tech-item._dop
+        .tech-item__icons
+            each icon in attributes.icons
+                .tech-item__icons__item
+                    +svgsprite(icon)
+        .tech-item__content
+            h5.tech-item__h
+                a.tech-item__link(href=attributes.href)=attributes.title
+            p.tech-item__text=attributes.text
+    
+

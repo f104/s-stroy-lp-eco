@@ -1,0 +1,50 @@
+.swiper-pagination-bullets {
+    bottom: 0;
+    width: auto;
+    left: 0;
+    right: 0;
+    .swiper-pagination-bullet {
+        margin: 0 6px;
+        width: 12px;
+        height: 12px;
+        background: #E4DFED;
+        opacity: 1;
+        @include transition(background);
+        &-active {
+            background: $color-primary;
+        }
+        @include media-breakpoint-up(md) {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+.swiper-button {
+    &-prev, &-next {
+        background-image: none;
+        left: -26px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background-color: $color-secondary;
+        color: $color-bg;
+        text-align: center;
+        line-height: 52px;
+        font-size: 18px;
+        @include transition(all);
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+        &:hover {
+            background-color: $color-bg;
+            color: $color-secondary;
+        }
+    }
+    &-next {
+        left: auto;
+        right: -26px;
+    }
+}

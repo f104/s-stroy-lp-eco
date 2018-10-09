@@ -1,0 +1,33 @@
+mixin config-list-item()
+    div(class='config-list-item js-config _' + attributes.type)
+        h5.config-list-item__h=attributes.title
+        .config-list-item__badge
+            +svgsprite(attributes.badgeIcon)
+            span.config-list-item__badge__text=attributes.badgeText
+        ul.config-list-item__togglers
+            li.config-list-item__togglers__item._active.js-config__toggler
+                span.config-list-item__togglers__item__inner Комплект базовый
+            li.config-list-item__togglers__item.js-config__toggler
+                span.config-list-item__togglers__item__inner Комплект плюс+
+        ul.config-list-item__list
+            li.config-list-item__list__item
+                a.dashed(href='#') Комплекс технологий 
+                    span.nowrap ЭКО-окон САКСЭС
+        block
+        div(class='config-list-item__img-wrapper _' + attributes.type)
+            img(src=attributes.image)
+        .config-list-item__price
+            span.config-list-item__price__desc Цена за окно 130×140 см
+            span.config-list-item__price__cost
+                span.js-config__target=attributes.price1
+                span.js-config__target.hidden=attributes.price2
+                | 
+                | ₽
+            span.config-list-item__price__payment Честная рассрочка 
+                span.config-list-item__price__payment__accent
+                    span.js-config__target=attributes.payment1
+                    span.js-config__target.hidden=attributes.payment2
+                    | 
+                    | ₽ / мес
+        a.btn._secondary._solid._for-white.config-list-item__btn.js-popup.js-config__target(href='#calc' data-action=attributes.action1) Рассчитать
+        a.btn._secondary._solid._for-white.config-list-item__btn.js-popup.js-config__target.hidden(href='#calc' data-action=attributes.action2) Рассчитать

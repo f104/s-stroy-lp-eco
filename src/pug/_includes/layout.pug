@@ -1,0 +1,18 @@
+block variables
+doctype html
+html(lang=__.lang, class="no-js")
+    head
+        include head
+    body.body
+        include mixins/svgsprite
+        include mixins/icon
+        include mixins/tooltip
+        //- include header
+        include footer
+        
+        //- +header
+        article.content
+            block content
+        +footer
+
+        include scripts

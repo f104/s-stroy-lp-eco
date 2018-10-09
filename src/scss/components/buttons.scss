@@ -1,0 +1,63 @@
+.btn {
+    background-color: $color-primary;
+    color: $color-base;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    line-height: 53px;
+    border-radius: 26.5px;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px rgba(43, 76, 185, 0.5);
+    padding: 0 25px;
+    white-space: nowrap;
+    @include ie10up {
+        height: 53px;
+    }
+    @include transition(all);
+    @include media-breakpoint-up(md) {
+        font-size: 13px;
+    }
+    &:hover {
+        background-color: $color-bg;
+        color: $color-primary;
+        box-shadow: 0px 10px 30px rgba($color-bg, 0.5);
+    }
+    &._for-white {
+        &:hover {
+            background-color: darken($color-primary, 20%);
+            color: $color-bg;
+            box-shadow: 0px 10px 30px rgba(43, 76, 185, 0.7);
+        }            
+    }
+    &._secondary {
+        background-color: $color-secondary;
+        box-shadow: 0px 10px 30px rgba(2, 157, 71, 0.5);
+        &:hover {
+            color: $color-secondary;
+        }
+        &._for-white {
+            &:hover {
+                background-color: darken($color-secondary, 20%);
+                color: $color-bg;
+                box-shadow: 0px 10px 30px rgba(2, 157, 71, 0.5);
+            }            
+        }
+    }
+    @include media-breakpoint-up(md) {
+        font-size: 14px;
+        line-height: 60px;
+        border-radius: 30px;
+        @include ie10up {
+            height: 60px;
+        }
+    }
+    &._disabled {
+        pointer-events: none;
+        opacity: .7;
+    }
+}

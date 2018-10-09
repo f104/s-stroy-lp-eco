@@ -1,0 +1,17 @@
+extends /_includes/layout
+
+block title
+    title ЭКО-окна — здоровый микроклимат в вашем доме
+
+block content
+    
+    include /blocks/tech/block
+    include /blocks/config/block
+    include /blocks/man
+    include /blocks/bank
+        
+    div(hidden)
+        include /blocks/popups/call
+        include /blocks/popups/calc
+        include /blocks/popups/bank
+        

@@ -1,0 +1,39 @@
+div(id='bank')
+    .bank._popup
+        .container
+            .bank__head
+                h3.bank__h Выгодная рассрочка от САКСЭС
+                .bank__lead Заполните заявку и получите выгодное предложение рассрочки
+            .bank__content
+                .bank__content__col
+                    h4.bank__sub-h Получить консультацию
+                    form.bank__form.js-form
+                        .input-group
+                            input(name='email' value='user@host.com' hidden)
+                            input(name='text' value='info' hidden)
+                            input(name='email3' value='info@example.com' hidden)
+                            input(name='form_id' value='2' hidden)
+                            input(name='form_name' value='Выгодная рассрочка от САКСЭС' hidden)
+                            input.input.js-mask(name='phone' required autocomplete='off')
+                            button.btn Оставить заявку
+                        .form-desc Оставьте ваш номер телефона и мы перезвоним вам, а также согласуем бесплатный выезд специалиста в удобное для вас время.
+                    .bank__payments
+                        .bank__payments__item
+                            span.bank__payments__item__accent 0%
+                            | Первоначальный взнос
+                        .bank__payments__item
+                            span.bank__payments__item__accent 0%
+                            | Переплат
+                        .bank__payments__item
+                            span.bank__payments__item__accent 10
+                            | месяцев рассрочки
+                    .bank__rules
+                        a.bank__rules__link(href='docs/Rassrochka_SAKSES.pdf' target='_blank') Условия рассрочки для клиентов САКСЭС [PDF, 55 KB]
+                .bank__content__col
+                    ul.bank__list
+                        li.bank__list__item Качественные окна сейчас — оплата потом
+                        li.bank__list__item Без залогов, поручителей и процентов  
+                        li.bank__list__item Оформляется в офисе продаж САКСЭС.
+                    .bank__att.sm-full
+                        +icon('attention')
+                        | Проценты банку выплачиваем мы

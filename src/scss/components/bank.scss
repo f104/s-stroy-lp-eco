@@ -1,0 +1,239 @@
+.bank {
+    $root: &;
+    background-color: $color-secondary;
+    color: $color-bg;
+    padding-top: 17px;
+    padding-bottom: 30px;
+    @include media-breakpoint-up(md) {
+        padding-top: 33px;
+        padding-bottom: 48px;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 43px;
+        padding-bottom: 50px;
+    }
+    &__head {
+        margin-bottom: 30px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
+        }
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__content{
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+    &__h {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 20px;
+        @include media-breakpoint-up(md) {
+            font-size: 30px;
+            margin-bottom: 28px;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 35px;
+            margin-bottom: 0;
+        }
+    }
+    &__lead {
+        font-size: 18px;
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 24px;
+        }
+    }
+    &__sub-h {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 22px;
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
+            margin-bottom: 36px;
+        }
+    }
+    &__att {
+        background-color: rgba($color-bg, .2);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 40px;
+        line-height: 41px;
+        padding: 0 12px 1px 6px;
+        [class^="icon-"] {
+            font-size: 19px;
+        }
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+            line-height: 46px;
+            display: inline-block;
+            border-radius: 10px;
+            [class^="icon-"] {
+                margin-right: .5ex;
+            }
+        }
+    }
+    &__payments {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 34px;
+        @include media-breakpoint-up(md) {
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 530px;
+            flex-wrap: nowrap;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 52px;
+        }
+        &__item {
+            line-height: 20px;
+            font-size: 14px;
+            color: rgba($color-bg, .7);
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 50%;
+            margin-bottom: 25px;
+            &:first-child {
+                border-right: 2px solid rgba($color-bg, .3);
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            @include media-breakpoint-up(md) {
+                line-height: 26px;
+                font-size: 18px;
+                border-right: 2px solid rgba($color-bg, .3);
+                margin-bottom: 0;
+                padding-left: 40px;
+                padding-right: 40px;
+                width: auto;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    border-right-width: 0;
+                    width: auto;
+                    padding-right: 0;
+                }
+            }
+            &__accent {
+                display: block;
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 32px;
+                margin-bottom: 10px;
+                color: $color-bg;
+                @include media-breakpoint-up(md) {
+                    line-height: 55px;
+                    font-size: 70px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    &__rules {
+        margin-bottom: 32px;
+        padding-left: 22px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 58px;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+        &__link {
+            font-size: 15px;
+            line-height: 25px;
+            border-bottom: 1px dashed;
+            @include media-breakpoint-up(md) {
+                font-size: 20px;
+                line-height: 26px;
+            }
+            &:before {
+                content: '\e801';
+                font-family: 'fontello';
+                position: absolute;
+                left: -24px;
+            }
+        }
+    }
+    &__list {
+        font-size: 15px;
+        margin-bottom: 35px;
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+            margin-bottom: 46px;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 38px;
+        }
+        &__item {
+            margin-bottom: 15px;
+            padding-left: 22px;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                left: 0px;
+                top: 3px;
+                background-color: $color-bg;
+            } 
+            @include media-breakpoint-up(md) {
+                margin-bottom: 25px;
+                &:before {
+                    top: 5px;
+                } 
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__btn {
+        @include media-breakpoint-up(md) {
+            width: 275px;
+        }
+    }
+    &._popup {
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        #{$root} {
+            &__head {
+                display: block;
+                padding-right: 100px;
+                margin-bottom: 65px;
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 65px;
+                }
+            }
+            &__h {
+                margin-bottom: 10px;
+            }
+            &__content {
+                @include media-breakpoint-up(lg) {
+                    @include row(50px);
+                    flex-direction: row;
+                    &__col {
+                        @include col(50%, 50px);
+                    }
+                }
+            }
+            &__form {
+                margin-bottom: 84px;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+mixin tech-item()
+    .tech-item
+        .tech-item__icons
+            each icon in attributes.icons
+                .tech-item__icons__item
+                    +svgsprite(icon)
+        .tech-item__content
+            h5.tech-item__h=attributes.title
+                if (attributes.lead)
+                    | 
+                    span.tech-item__h__small=attributes.lead
+            p.tech-item__text=attributes.text
+    
+

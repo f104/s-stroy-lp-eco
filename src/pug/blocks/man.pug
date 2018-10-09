@@ -1,0 +1,33 @@
+.man
+    .container
+        .heading
+            h3.heading__h Оконный завод «САКСЭС»
+            p.heading__lead Преимиальный проект «ЭКО окна» — жемчужина новейших технологий комплектации и установки окон
+
+        .man__slider
+            .swiper-container.sm-full.md-full
+                .swiper-wrapper
+                    .swiper-slide
+                        .man__slide(style='background-image: url(img/man1.jpg)')
+                    .swiper-slide
+                        .man__slide(style='background-image: url(img/man2.jpg)')
+                    .swiper-slide
+                        .man__slide(style='background-image: url(img/man3.jpg)')
+            .swiper-button-prev
+                +icon('prev')
+            .swiper-button-next
+                +icon('next')
+            .swiper-pagination
+
+        .man__sert
+            p.man__sert__text Оконный завод «САКСЭС» — это высокотехнологичное производство светопрозрачных конструкций, сертифицированное по стандарту ISO 9001.
+            .man__sert__view
+                span.man__sert__view__h
+                    a.dashed(href='docs/iso.pdf' target='_blank') Посмотреть сертификат ISO 9001
+                span.man__sert__view__muted PDF, 318KB
+                +svgsprite('pdf')
+
+        include /blocks/feats/common
+
+    .man__bg
+        img.man__bg__img(src='img/man1.jpg')

@@ -1,0 +1,67 @@
+*, *:after, *:before {
+    position: relative;
+}
+
+.body {
+    margin:0;
+    padding:0;
+
+    background: $color-bg;
+    color: $color-text;
+
+    font-family: $font-family;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+
+    display: flex;
+
+}
+.content {
+    flex-grow: 1;
+    padding-top: 44px;
+    @include media-breakpoint-up(md) {
+        padding-top: 60px;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 80px;
+    }
+}
+
+.container {
+    @include make-container();
+    &._xl {
+        @include media-breakpoint-up(lg) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+.nowrap {
+    white-space: nowrap;
+}
+
+.color-primary {
+    color: $color-primary;
+}
+.color-secondary {
+    color: $color-secondary;
+}
+
+.dashed {
+    border-bottom: 1px dashed;
+}
+
+a {
+    @include transition(opacity);
+    &:hover {
+        opacity: $link-opacity;
+    }
+}
+strong {
+    font-weight: 700;
+}

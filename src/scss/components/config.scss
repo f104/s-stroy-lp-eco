@@ -1,0 +1,390 @@
+.config {
+    &__intro-bg {
+        background-color: #f5f5f5;
+        padding: map-get($container-paddings, sm);
+        line-height: 18px;
+        font-size: 13px;
+        text-align: center;
+        margin-left: - map-get($container-paddings, sm);
+        margin-right: - map-get($container-paddings, sm);
+        margin-bottom: 26px;
+        @include media-breakpoint-up(md) {
+            line-height: 23px;
+            font-size: 16px;
+            margin-left: - map-get($container-paddings, md);
+            margin-right: - map-get($container-paddings, md);
+            margin-bottom: 36px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        @include media-breakpoint-up(lg) {
+            line-height: 26px;
+            font-size: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1048px;
+            margin-bottom: 66px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &__intro-h {
+        font-weight: 600;
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 18px;
+        @include media-breakpoint-up(md) {
+            line-height: normal;
+            font-size: 22px;
+            margin-bottom: 26px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 25px;
+            margin-bottom: 32px;
+        }
+    }
+    &__intro-text {
+        line-height: 19px;
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 30px;
+        @include media-breakpoint-up(md) {
+            line-height: 22px;
+            font-size: 15px;
+            margin-bottom: 36px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 58px;
+        }
+    }
+}
+
+.config-list {
+    .config-list-item {
+        margin-left: - map-get($container-paddings, sm);
+        margin-right: - map-get($container-paddings, sm);
+        margin-bottom: 20px;
+        @include media-breakpoint-up(md) {
+            margin-left: - map-get($container-paddings, md);
+            margin-right: - map-get($container-paddings, md);
+            margin-bottom: 15px;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.config-list-item {
+    $root: &;
+    background-color: #EDF6FC;
+    padding-top: 18px;
+    padding-left: map-get($container-paddings, sm);
+    padding-right: map-get($container-paddings, sm);
+    padding-bottom: 36px;
+    overflow: hidden;
+    @include media-breakpoint-up(md) {
+        background-color: transparent;
+        padding-top: 30px;
+        padding-left: map-get($container-paddings, md);
+        padding-right: map-get($container-paddings, md);
+        padding-bottom: 30px;
+    }
+    @include media-breakpoint-up(lg) {
+        border-radius: 7px;
+    }
+    &__h {
+        font-weight: 600;
+        font-size: 19px;
+        margin-bottom: 24px;
+        @include media-breakpoint-up(md) {
+            font-size: 25px;
+            margin-bottom: 27px;
+            width: 460px;
+        }
+        @include media-breakpoint-up(lg) {
+            width: auto;
+        }
+    }
+    &__badge {
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+        position: absolute;
+        right: map-get($container-paddings, md);
+        top: map-get($container-paddings, md);
+        color: $color-bg;
+        font-weight: 600;
+        line-height: 50px;
+        font-size: 16px;
+        border-radius: 25px;
+        padding: 0 7px;
+        @include ie10up {
+            height: 50px;
+        }
+        .svgsprite {
+            font-size: 39px;
+        }
+        &__text {
+            padding: 0 10px;
+        }
+    }
+    &__togglers {
+        margin-bottom: 35px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 20px;
+        }
+        &__item {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 36px;
+            color: $color-primary;
+            padding: 0 12px;
+            border: 1px solid $color-primary;
+            border-radius: 3px;
+            margin-bottom: 9px;
+            cursor: pointer;
+            @include transition(all);
+            &:last-child {
+                margin-bottom: 0;
+                margin-right: 0;
+            }
+            &__inner {
+                border-bottom: 1px dashed;
+            }
+            @include ie10up {
+                height: 38px;
+            }
+            &._active, &:hover {
+                background-color: $color-primary;
+                color: $color-bg;
+                #{$root}__togglers__item__inner {
+                    border-bottom-width: 0;
+                }
+            }
+            &._active {
+                cursor: default;
+                pointer-events: none;
+            }
+            @include media-breakpoint-up(md) {
+                display: inline-block;
+                margin-right: 11px;
+                margin-bottom: 11px;
+            }
+        }
+    }
+    &__img-wrapper {
+        margin-left: - map-get($container-paddings, sm);
+        margin-right: - map-get($container-paddings, sm);
+        margin-bottom: 20px;
+        @include media-breakpoint-up(md) {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: linear-gradient(90.27deg, #EDF6FC 0.14%, rgba(237, 246, 252, 0.3) 99.86%);
+                z-index: 1;
+            }
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 183px;
+                background: linear-gradient(90.21deg, #EDF6FC 0.14%, rgba(237, 246, 252, 0) 99.86%);
+                opacity: 0.7;
+                z-index: 1;
+                @include media-breakpoint-up(lg) {
+                    right: 396px;
+                }
+            }
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+    @each $key, $color in $config-colors {
+        &._#{$key} {
+            #{$root}__h {
+                color: $color;
+            }
+            #{$root}__badge {
+                background-color: $color;
+            }
+            #{$root}__img-wrapper {
+                background-image: url(/img/config/#{$key}-md.jpg);
+                @include media-breakpoint-up(lg) {
+                    background-image: url(/img/config/#{$key}-lg.jpg);
+                }
+            }
+        }
+    }
+    &__list {
+        font-weight: 500;
+        line-height: 27px;
+        font-size: 15px;
+        color: $color-primary;
+        margin-bottom: 20px;
+        @include media-breakpoint-up(md) {
+            font-size: 17px;
+            line-height: 25px;
+        }
+        &__item {
+            padding-left: 30px;
+            margin-bottom: 15px;
+            @include media-breakpoint-up(md) {
+                margin-bottom: 20px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                left: 6px;
+                top: 10px;
+                background-color: $color-primary;
+                @include media-breakpoint-up(md) {
+                    top: 8px;
+                }
+            }
+        }
+    }
+    &__feats {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15px;
+        @include media-breakpoint-up(md) {
+            font-size: 16px;
+            line-height: 23px;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+        &__item {
+            padding-left: 30px;
+            margin-bottom: 15px;
+            @include media-breakpoint-up(md) {
+                margin-bottom: 20px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:before {
+                content: '\e810';
+                font-family: 'fontello';
+                position: absolute;
+                left: 0;
+                font-size: 20px;
+                color: $color-secondary;
+            }
+            &__accent {
+                font-weight: 600;
+                color: $color-secondary-dark;
+                @include media-breakpoint-up(md) {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__feats-wrapper {
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    &__price {
+        margin-bottom: 30px;
+        @include media-breakpoint-up(md) {
+            text-align: right;
+            position: absolute;
+            top: 106px;
+            right: map-get($container-paddings, md);
+        }
+        &__desc {
+            display: block;
+            font-weight: 500;
+            line-height: 21px;
+            font-size: 14px;
+            color: $color-primary;
+            @include media-breakpoint-up(md) {
+                font-size: 15px;
+            }
+        }
+        &__cost {
+            display: block;
+            font-weight: 700;
+            font-size: 36px;
+            color: $color-primary;
+            margin-bottom: 8px;
+            @include media-breakpoint-up(md) {
+                font-size: 44px;
+            }
+        }
+        &__payment {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 500;
+            background-color: $color-bg;
+            color: $color-secondary;
+            border-radius: 10.5px;
+            padding: 0 10px;
+            &__accent {
+                font-weight: 700;
+            }
+            @include ie10up {
+                height: 21px;
+            }
+            @include media-breakpoint-up(md) {
+                right: -8px;
+            }
+        }
+    }
+    &__btn {
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            right: map-get($container-paddings, md);
+            bottom: map-get($container-paddings, md);
+            width: 230px;
+        }
+    }
+}

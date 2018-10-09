@@ -1,0 +1,9 @@
+.idea/
+nbproject/
+node_modules/
+bower_components/
+tmp/
+src/scss/generated
+_docs
+dist/backend
+public_html/backend

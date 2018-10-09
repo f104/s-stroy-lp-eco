@@ -1,0 +1,7 @@
+mixin tooltip()
+    span.tooltip
+        i.icon-help
+        span(class='tooltip__content _' + attributes.type)
+            span.tooltip__text=attributes.text
+            span.tooltip__img
+                img(src=attributes.image)

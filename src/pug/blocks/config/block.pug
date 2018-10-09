@@ -1,0 +1,255 @@
+include config-list-item
+
+section.config
+    .container
+        .heading
+            h3.heading__h Комплектации 
+                span.nowrap ЭКО-окон
+            h3.heading__lead от оконного завода «САКСЭС»
+        .config__intro-bg ЭКО-окна САКСЭС — это премиальные решения для здоровья всей вашей семьи, 
+            strong окна которые дышат
+            |. Забудьте о шуме при проветривании, пыли на подоконнике, лишних аллергенах, жаре летом и холоде зимой, — дышите свежим воздухом и будьте здоровы!
+        .config__intro-h Выбирайте свой вариант по назначению
+        .config__intro-text Все представленые окна имеют комплекс технологий ЭКО-окон САКСЭС. В зависимости от назначения мы разработали индивидуальные дополнения, чтобы сделать премиальные эко-окна ещё функциональнее.
+        
+        .config-list
+        
+            +config-list-item(
+                type='1'
+                title='С защитой от холода'
+                badgeIcon='dop-1'
+                badgeText='Теплозащита'
+                image='img/config/1.jpg'
+                price1='12 990'
+                payment1='1 299'
+                action1='С защитой от холода Rehau Grazio 70 мм'
+                price2='13 990'
+                payment2='1 399'
+                action2='С защитой от холода Rehau Intelio 80 мм'
+            )
+                .js-config__target
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Grazio 70 мм
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Ультратеплый стеклопакет 40 мм
+                        li.config-list-item__feats__item Теплый откос 10 мм
+                        li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                        li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                .js-config__target.hidden
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Intelio 80 мм
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Ультратеплый стеклопакет 48 мм
+                        li.config-list-item__feats__item Теплый откос 16 мм
+                        li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                        li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                        
+            +config-list-item(
+                type='2'
+                title='С сохранением прохлады в жаркую погоду'
+                badgeIcon='dop-4'
+                badgeText='Солнцезащита'
+                image='img/config/2.jpg'
+                price1='12 990'
+                payment1='1 299'
+                action1='С сохранением прохлады в жаркую погоду Rehau Grazio 70 мм'
+                price2='13 990'
+                payment2='1 399'
+                action2='С сохранением прохлады в жаркую погоду Rehau Intelio 80 мм'
+            )
+                .js-config__target
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Grazio 70 мм
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Солнцезащитный стеклопакет 40 мм
+                            | 
+                            | (мультифункциональное солнцезащитное стекло)
+                            | 
+                            +tooltip(
+                                type='img-right'
+                                text= 'Солнцезащитный стеклопакет избавит от жары в помещении, смягчит проникающий через стекло ультрафиолет и снизит нагрузку на кондиционер.'
+                                image='img/config/tooltip-sun.png' 
+                            )
+                        li.config-list-item__feats__item Теплый откос 10 мм
+                        li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                        li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                .js-config__target.hidden
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Intelio 80 мм 
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Солнцезащитный стеклопакет 48 мм
+                            | 
+                            | (Stopsol солнезащитное стекло)
+                            | 
+                            +tooltip(
+                                type='img-right'
+                                text= 'Солнцезащитный стеклопакет избавит от жары в помещении, смягчит проникающий через стекло ультрафиолет и снизит нагрузку на кондиционер.'
+                                image='img/config/tooltip-sun.png' 
+                            )
+                        li.config-list-item__feats__item Теплый откос 16 мм
+                        li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                        li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                        
+            +config-list-item(
+                type='3'
+                title='С подавлением шума'
+                badgeIcon='dop-3'
+                badgeText='Доп. тишина'
+                image='img/config/3.jpg'
+                price1='12 990'
+                payment1='1 299'
+                action1='С подавлением шума Rehau Grazio 70 мм'
+                price2='13 990'
+                payment2='1 399'
+                action2='С подавлением шума Rehau Intelio 80 мм'
+            )
+                .js-config__target
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Grazio 70 мм
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Звукоизоляционный стеклопакет 40 мм (антирезонансный)
+                        li.config-list-item__feats__item Теплый откос 10 мм
+                        li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                        li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                .js-config__target.hidden
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Intelio 80 мм 
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Звукоизоляционный стеклопакет 48 мм (звукоизоляционное стекло триплекс)
+                        li.config-list-item__feats__item Теплый откос 16 мм
+                        li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                        li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                        
+            +config-list-item(
+                type='4'
+                title='С технологией «Чистый воздух»'
+                badgeIcon='dop-2'
+                badgeText='Приток воздуха'
+                image='img/config/4.jpg'
+                price1='12 990'
+                payment1='1 299'
+                action1='С технологией «Чистый воздух» Rehau Grazio 70 мм'
+                price2='13 990'
+                payment2='1 399'
+                action2='С технологией «Чистый воздух» Rehau Intelio 80 мм'
+            )
+                .js-config__target
+                    .config-list-item__feats-wrapper
+                        ul.config-list-item__feats
+                            li.config-list-item__feats__item Rehau Grazio 70 мм
+                            li.config-list-item__feats__item 
+                                span.config-list-item__feats__item__accent Мультифункциональный стеклопакет 40 мм
+                            li.config-list-item__feats__item Теплый откос 10 мм
+                            li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                            li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                        ul.config-list-item__feats
+                            li.config-list-item__feats__item 
+                                span.config-list-item__feats__item__accent Приточный клапан Air-Box 
+                                    +tooltip(
+                                        type='img-top'
+                                        text= 'Приточный клапан Air‑Box'
+                                        image='img/config/tooltip-airbox.png' 
+                                    )
+                            li.config-list-item__feats__item 
+                                span.config-list-item__feats__item__accent Мойка воздуха Бонеко
+                                    +tooltip(
+                                        type='img-top'
+                                        text= 'Мойка воздуха Бонеко'
+                                        image='img/config/tooltip-boneko.png' 
+                                    )
+                .js-config__target.hidden
+                    .config-list-item__feats-wrapper
+                        ul.config-list-item__feats
+                            li.config-list-item__feats__item Rehau Intelio 80 мм 
+                            li.config-list-item__feats__item 
+                                span.config-list-item__feats__item__accent Мультифункциональный стеклопакет 48 мм
+                            li.config-list-item__feats__item Теплый откос 16 мм
+                            li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                            li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                        ul.config-list-item__feats
+                            li.config-list-item__feats__item 
+                                span.config-list-item__feats__item__accent Проветриватель Аэропак
+                                    +tooltip(
+                                        type='img-top'
+                                        text= 'Проветриватель Аэропак'
+                                        image='img/config/tooltip-aeropack.png' 
+                                    )
+                            li.config-list-item__feats__item 
+                                span.config-list-item__feats__item__accent Мойка воздуха Бонеко
+                                    +tooltip(
+                                        type='img-top'
+                                        text= 'Мойка воздуха Бонеко'
+                                        image='img/config/tooltip-boneko.png' 
+                                    )
+                        
+            +config-list-item(
+                type='5'
+                title='С повышенной безопасностью'
+                badgeIcon='dop-5'
+                badgeText='Антивзлом'
+                image='img/config/5.jpg'
+                price1='12 990'
+                payment1='1 299'
+                action1='С повышенной безопасностью Rehau Grazio 70 мм'
+                price2='13 990'
+                payment2='1 399'
+                action2='С повышенной безопасностью Rehau Intelio 80 мм'
+            )
+                .js-config__target
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Grazio 70 мм
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Бронированный стеклопакет 40 мм
+                            | 
+                            | (защитная пленка А2)
+                        li.config-list-item__feats__item Теплый откос 10 мм
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Фурнитура GU (Германия) противовзломная, класс WK1 
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Ручка L.DESIGN с ключем
+                .js-config__target.hidden
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Intelio 80 мм 
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Бронированный стеклопакет 48 мм
+                            | 
+                            | (бронированное стекло триплекс)
+                        li.config-list-item__feats__item Теплый откос 16 мм
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Фурнитура GU (Германия) противовзломная, класс WK2 
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Ручка L.DESIGN с ключем
+                        
+            +config-list-item(
+                type='6'
+                title='С защитой для детей'
+                badgeIcon='dop-6'
+                badgeText='Детская безопасность'
+                image='img/config/6.jpg'
+                price1='12 990'
+                payment1='1 299'
+                action1='С защитой для детей Rehau Grazio 70 мм'
+                price2='13 990'
+                payment2='1 399'
+                action2='С защитой для детей Rehau Intelio 80 мм'
+            )
+                .js-config__target
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Grazio 70 мм
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Прочный стеклопакет. Противоосколочная пленка
+                        li.config-list-item__feats__item Теплый откос 10 мм
+                        li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                        li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Детский замок
+                .js-config__target.hidden
+                    ul.config-list-item__feats
+                        li.config-list-item__feats__item Rehau Intelio 80 мм 
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Прочный стеклопакет (бронированное стекло триплекс)
+                        li.config-list-item__feats__item Теплый откос 16 мм
+                        li.config-list-item__feats__item Фурнитура GU Euro-jet (Германия)
+                        li.config-list-item__feats__item Ручка Rehau L.DESIGN
+                        li.config-list-item__feats__item 
+                            span.config-list-item__feats__item__accent Детский замок с тросиком
