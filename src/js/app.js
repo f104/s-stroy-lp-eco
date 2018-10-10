@@ -48,8 +48,8 @@ var app = {
             app.initManSlider();
         });
 
-        app.document.on(app.resizeEventName, function () {
-        });
+//        app.document.on(app.resizeEventName, function () {
+//        });
 
         // Antispam
         setTimeout(function () {
@@ -110,14 +110,14 @@ var app = {
             },
         });
     },
-
+    
     /**
      * Проверяет размер окна и пишет его в app.media
      * @returns void
      */
     checkMedia: function () {
         let current = app.media;
-        for (let key of Object.keys(app.breakpoints)) {
+        for (let key in app.breakpoints) {
             if (app.window.outerWidth() >= app.breakpoints[key]) {
                 app.media = app.breakpoints[key];
             }
