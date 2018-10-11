@@ -38,6 +38,7 @@
         background-color: $color-secondary;
         box-shadow: 0px 10px 30px rgba(2, 157, 71, 0.5);
         &:hover {
+            background-color: $color-bg;
             color: $color-secondary;
         }
         &._for-white {

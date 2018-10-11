@@ -1,5 +1,4 @@
 // Commons
-/*@import 'vendor/swiper.min.css';*/
 @import "variables";
 @import "custom-reset";
 
@@ -14,6 +13,8 @@
 @import "fonts";
 
 // Components
+@import "components/header";
+@import "components/nav";
 @import "components/buttons";
 @import "components/forms";
 @import "components/footer";
@@ -30,3 +31,6 @@
 @import "components/feats";
 @import "components/compare";
 @import "components/quiz";
+@import "components/eco";
+@import "components/main";
+@import "components/step";

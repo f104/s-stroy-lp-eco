@@ -20,10 +20,10 @@
 .content {
     padding-top: 44px;
     @include media-breakpoint-up(md) {
-        padding-top: 60px;
+        padding-top: 62px;
     }
     @include media-breakpoint-up(lg) {
-        padding-top: 80px;
+        padding-top: 70px;
     }
 }
 
@@ -49,6 +49,9 @@
 }
 .color-secondary {
     color: $color-secondary;
+}
+.color-secondary-dark {
+    color: $color-secondary-dark;
 }
 
 .dashed {

@@ -28,6 +28,14 @@
             height: 60px;
         }
     }
+    &._secondary {
+        &:hover {
+            @include border-inset(1px, $color-secondary);
+        }
+        &:focus {
+            @include border-inset(2px, $color-secondary);
+        }
+    }
     &._for-white {
         background-color: $color-bg-gray;
         color: #3E3E3F;

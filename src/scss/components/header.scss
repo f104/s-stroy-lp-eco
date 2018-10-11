@@ -1,0 +1,160 @@
+.header {
+    $root: &;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: $color-bg;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.16);
+    height: 44px;
+    @include media-breakpoint-up(md) {
+        height: 62px;
+    }
+    @include media-breakpoint-up(lg) {
+        height: 70px;
+    }
+    &__inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media-breakpoint-down(sm) {
+            #{$root}__logo { 
+
+            }
+            #{$root}__phone { 
+            }
+            #{$root}__eco { 
+            }
+            #{$root}__call { 
+            }
+        }
+        @include media-breakpoint-up(md) {
+            /*            > * {
+                            margin-right: 25px;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                        #{$root}__call { flex-grow: 1; }*/
+        }
+        /*        @include media-breakpoint-up(lg) {
+                    #{$root}__logo { width: 112px; margin-right: 48px; }
+                    #{$root}__call { flex-grow: 0; }
+                }
+                @include media-breakpoint-up(xl) {
+                    #{$root}__eco { 
+                        flex-grow: 1; 
+                        .eco-badge {
+                            width: 214px;
+                        }
+                    }
+                }*/
+    }
+    &__menu {
+        cursor: pointer;
+        width: 14px;
+        margin-right: 20px;
+        @include media-breakpoint-up(md) {
+            margin-right: 30px;
+        }
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+        &:before {
+            content: '\E80B';
+            font-family: 'fontello';
+            color: $color-primary;
+            font-size: 12px;
+        }
+        &._active {
+            &:before {
+                content: '\E816';
+            }            
+        }
+    }
+    &__logo {
+        padding-right: 8px;
+        margin-right: 8px;
+        border-right: 1px solid rgba(#193F7E, .3);
+        @include media-breakpoint-up(md) {
+            margin-right: 9px;
+        }
+        @include media-breakpoint-up(lg) {
+            padding-right: 15px;
+            margin-right: 16px;
+        }
+        &__md {
+            display: none;
+            @include media-breakpoint-up(md) {
+                display: block;
+                width: 80px;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 92px;
+            }
+        }
+        &__sm {
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+    }
+    &__eco {
+        width: 25px;
+        overflow: hidden;
+        @include media-breakpoint-up(md) {
+            width: auto;
+        }
+        &__img {
+            height: 22px;
+            @include media-breakpoint-up(md) {
+                height: 34px;
+            }
+        }
+    }
+    &__phone {
+        font-weight: 500;
+        font-size: 14px;
+        flex-grow: 1;
+        margin-right: 20px;
+        text-align: right;
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 23px;
+            margin-right: 30px;
+        }
+    }
+    &__call {
+        color: $color-secondary-dark;
+        &__text {
+            display: none;
+            @include media-breakpoint-up(md) {
+                display: block;
+                font-weight: 500;
+                font-size: 16px;
+                margin-left: 20px;
+                &:before {
+                    content: '\e807';
+                    font-family: 'fontello';
+                    font-size: 14px;
+                    position: absolute;
+                    left: -20px;
+                    top: 4px;
+                }
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 18px;
+            }
+        }
+        .svgsprite {
+            font-size: 18px;
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+    }
+}

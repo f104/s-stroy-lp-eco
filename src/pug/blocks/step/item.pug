@@ -1,0 +1,6 @@
+mixin item()
+    .step__list__item
+        .step__list__item__step=attributes.step
+        .step__list__item__icon
+            +svgsprite('step-' + attributes.step)
+        .step__list__item__text=attributes.text

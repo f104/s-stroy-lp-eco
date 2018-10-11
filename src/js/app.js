@@ -42,12 +42,13 @@ var app = {
         // Init forms
         this.forms = forms;
         this.forms.init.call(this);
-        
+
         // Init quiz
         this.quiz = quiz;
         this.quiz.init.call(this);
 
         app.document.ready(function () {
+            app.initNav();
             app.initPopup();
             app.initConfig();
             app.initManSlider();
@@ -62,23 +63,71 @@ var app = {
         }, 5000);
     },
 
+    initNav: function () {
+        let $toggler = $('.js-nav-toggler'), $nav = $('.js-nav'), $header = $('.header');
+        // handle hash link on load page 
+        if (location.hash.length > 0) {
+            let hash = location.hash;
+            let id = hash.substr(1);
+            let $target = $('#' + id);
+            let $links = $('.js-nav-link[href="' + hash + '"]');
+            if ($target && $links) {
+                $links.addClass('_active');
+                let offset = $target.offset().top - $header.outerHeight();
+                window.scroll(0, offset);
+            }
+        }
+        $toggler.on('click', function () {
+            $toggler.toggleClass('_active');
+            $nav.slideToggle();
+        });
+        app.document.on(app.resizeEventName, function () {
+            $toggler.removeClass('_active');
+            if (app.media >= app.breakpoints.lg) {
+                $nav.show();
+            } else {
+                $nav.hide();
+            }
+        });
+        $('.js-nav-link').on('click', function () {
+            let id = $(this).attr('href').substr(1),
+                    $target = $('#' + id);
+            if ($target) {
+                let offset = $target.offset().top - $header.outerHeight();
+                $('html, body').animate({scrollTop: offset});
+                if (history.pushState) {
+                    history.pushState(null, null, '#' + id);
+                } else {
+                    location.hash = '#' + id;
+                }
+                $('.js-nav-link').removeClass('_active');
+                $('.js-nav-link[href="#' + id + '"]').addClass('_active');
+                if (app.media < app.breakpoints.lg) {
+                    $toggler.removeClass('_active');
+                    $nav.slideUp();
+                }
+            }
+            return false;
+        });
+    },
+
     initPopup: function () {
         require("@fancyapps/fancybox");
         $('.js-popup').fancybox(this.fancyOptions);
     },
-    
+
     initConfig: function () {
-        $('.js-config').each(function(){
+        $('.js-config').each(function () {
             let $toggler = $(this).find('.js-config__toggler');
             let $target = $(this).find('.js-config__target');
-            $toggler.on('click', function() {
+            $toggler.on('click', function () {
                 $toggler.removeClass('_active');
                 $(this).addClass('_active');
                 $target.toggleClass('hidden');
             });
         });
     },
-    
+
     initManSlider: function () {
         let stretch = 535;
         if (app.media >= app.breakpoints.lg) {
@@ -115,7 +164,7 @@ var app = {
             },
         });
     },
-    
+
     /**
      * Проверяет размер окна и пишет его в app.media
      * @returns void

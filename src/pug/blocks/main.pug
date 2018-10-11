@@ -1,0 +1,29 @@
+.main
+    .main__text-wrapper
+        .container
+            .main__text
+                h3.main__text__h 
+                    span.main__text__h__accent Эко-окна 
+                    | — здоровый микроклимат в вашем доме
+                p.main__text__text Обычные окна сохраняют тепло, но не способствуют формированию здорового микроклимата для жизни. 
+                p.main__text__text Наш специалист по 
+                    strong.color-secondary ЭКО-инжинирингу 
+                    | бесплатно снимет замеры параметров вашего помещения и предложит подходящие решения умного остекления.
+    .main__img
+        .main__img__inner(style='background-image: url(img/main/image.jpg')
+        .main__img__icons
+            +svgsprite('main')
+    .container
+        .main__form
+            p.main__form__text Проект «ЭКО окна» оконного завода «САКСЭС» — это новое качество вашей повседневной жизни и здоровья вашей семьи.
+            h4.main__form__h Создадим здоровую атмосферу для вашей жизни:
+            form.maon__form__form.js-form
+                .input-group
+                    input(name='email' value='user@host.com' hidden)
+                    input(name='text' value='info' hidden)
+                    input(name='email3' value='info@example.com' hidden)
+                    input(name='form_id' value='2' hidden)
+                    input(name='form_name' value='Первый экран' hidden)
+                    input.input._for-white._secondary.js-mask(name='phone' required autocomplete='off')
+                    button.btn._secondary Оставить заявку
+            p.main__form__help Оставьте ваш номер и наш менеджер свяжется с вами

@@ -5,12 +5,32 @@ block title
 
 block content
     
+    include /blocks/main
+    include /blocks/step/block
     include /blocks/quiz/block
+    include /blocks/eco
     include /blocks/compare/block
     include /blocks/tech/block
     include /blocks/config/block
     include /blocks/man
     include /blocks/bank
+    
+    script.
+      	/* handle hash link on load page 
+      	if (location.hash.length > 0) {
+            var hash = location.hash;
+            var id = hash.substr(1);
+            var header = document.querySelector('.header');
+            var target = document.getElementById(id);
+            var links = document.querySelector('.js-nav-link[href="' + hash + '"]');
+            if (target !== null && links !== null) {
+                links.classList.add("_active");
+                var offset = target.offsetTop - 70;
+                console.log(offset);
+                window.scroll(0, offset);
+            }
+        }
+        */
         
     div(hidden)
         include /blocks/popups/call

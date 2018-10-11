@@ -1,0 +1,53 @@
+.nav {
+    display: none;
+    background-color: $color-primary;
+    position: fixed;
+    width: 100%;
+    top: 44px;
+    z-index: 100;
+    padding-top: map-get($container-paddings, sm);
+    padding-bottom: map-get($container-paddings, sm);
+    @include media-breakpoint-up(md) {
+        top: 62px;
+        padding-top: map-get($container-paddings, md);
+        padding-bottom: map-get($container-paddings, md);
+    }
+    @include media-breakpoint-up(lg) {
+        display: block;
+        position: static;
+        top: 0;
+        padding: 0;
+    }
+    &__list {
+        color: $color-bg;
+        font-weight: 500;
+        font-size: 14px;
+        @include media-breakpoint-up(lg) {
+            font-size: 15px;
+            line-height: 38px;
+            display: flex;
+            justify-content: space-between;
+            @include ie10up {
+                height: 40px;
+            }
+        }
+        &__item {
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 0;
+            }
+        }
+        &__link {
+            border-bottom: 2px solid $color-primary;
+            &._active {
+                border-bottom-color: $color-bg;
+            }
+            @include media-breakpoint-up(lg) {
+                display: block;
+            }
+        }
+    }
+}

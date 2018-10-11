@@ -1,17 +1,15 @@
 mixin header(options)
     header.header&attributes(attributes)
         .container._xl.header__inner
+            .header__menu.js-nav-toggler
             .header__logo
                 a(href='/')
                     img.header__logo__sm(src='img/logo-sm.svg' alt='САКСЭС')
-                    img.header__logo__md(src='img/logo-new.svg' alt='САКСЭС')
+                    img.header__logo__md(src='img/logo.svg' alt='САКСЭС')
             .header__eco
-                +eco(button=true)
+                img.header__eco__img(src='img/eco.svg' alt='Проект эко-окна')
             .header__phone 
-                a(href='tel:+78314206123') +7 (831) 420-61-23 
-            a.header__call.js-popup(href='#call')
+                a(href='tel:+78312660618') +7 (831) 266-06-18 
+            a.header__call.js-popup(href='#call' data-action='Шапка')
                 +svgsprite('phone')
                 span.header__call__text.dashed Заказать обратный звонок
-            .header__dog(hidden) 
-                span.header__dog__text Оплата по договору
-                +svgsprite('dog')

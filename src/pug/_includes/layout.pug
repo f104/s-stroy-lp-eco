@@ -7,11 +7,13 @@ html(lang=__.lang, class="no-js")
         include mixins/svgsprite
         include mixins/icon
         include mixins/tooltip
-        //- include header
+        include header
+        include nav
         include footer
         
-        //- +header
+        +header
         article.content
+            +nav
             block content
         +footer
 

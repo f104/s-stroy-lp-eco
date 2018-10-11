@@ -1,0 +1,41 @@
+section.eco(id="eco")
+    .container
+        .eco__text
+            h3.eco__text__h Здоровый микроклимат в вашем доме
+            p.eco__text__lead Улучшите качество жизни вашей семьи
+            p.eco__text__text 
+                strong.color-secondary-dark ЭКО-инжиниринг 
+                | — наша бесплатная экспертиза микроклимата. 
+                br
+                | С помощью специального оборудования специалист 
+                strong.color-secondary-dark исследует помещение на соответствие 
+                | действующим нормативам для комфортного микроклимата в вашей квартире (доме). На основании данного анализа специалист предложит вам оптимальный вариант остекления, решающий задачу правильного температурного баланса, тишины, влажности и воздухообмена, а также безопасности детей и самого жилого пространства.
+            ul.eco__text__list
+                li.eco__text__list__item Температура воздуха — +20‑+25°C.
+                li.eco__text__list__item Относительная влажность — 35‑55%.
+                li.eco__text__list__item Приток воздуха от 1м³ на 1м² в час.
+                li.eco__text__list__item Уровень шума — 30‑55 Дб.
+    .eco__img
+        .eco__img__inner(style='background-image: url(img/eco/image.jpg')
+.eco-form
+    .eco-form__bg(style='background-image: url(img/eco/bg.jpg')
+    .container
+        .eco-form__row
+            .eco-form__row__col
+                .eco-form__head
+                    h3.eco-form__h Вызов специалиста 
+                        br
+                        | на ЭКО-инжиниринг
+                    +svgsprite('specialist')
+                p.eco-form__text Специалист выявит проблемные зоны, даст рекомендации по результатам исследования, подберет оптимальные варианты остекления с учетом микроклиматических особенностей помещения.
+            .eco-form__row__col
+                h4.eco-form__sub-h Оставьте ваш номер и мы вам перезвоним:
+                form.eco-form__form.js-form
+                    .input-group
+                        input(name='email' value='user@host.com' hidden)
+                        input(name='text' value='info' hidden)
+                        input(name='email3' value='info@example.com' hidden)
+                        input(name='form_id' value='4' hidden)
+                        input(name='form_name' value='Вызов специалиста на эко-инжиниринг (inline)' hidden)
+                        input.input._secondary.js-mask(name='phone' required autocomplete='off')
+                        button.btn._secondary Оставить заявку
