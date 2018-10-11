@@ -508,11 +508,11 @@
         display: none;
         @include media-breakpoint-up(lg) {
             display: block;
-            width: 308px;
+            width: 275px;
             position: absolute;
-            top: 207px;
+            top: 180px;
             left: 50%;
-            transform: translateX(460px);
+            transform: translateX(450px);
             opacity: .7;
         }
     }

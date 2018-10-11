@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import page from 'page';
 import forms from 'forms';
+import quiz from 'quiz';
 import Swiper from 'swiper/dist/js/swiper.min.js';
 var app = {
 
@@ -41,6 +42,10 @@ var app = {
         // Init forms
         this.forms = forms;
         this.forms.init.call(this);
+        
+        // Init quiz
+        this.quiz = quiz;
+        this.quiz.init.call(this);
 
         app.document.ready(function () {
             app.initPopup();

@@ -19,6 +19,83 @@
   </head>
   <body class="body">
     <article class="content">
+      <div class="quiz" data-anchor="quiz">
+        <div class="container">
+          <div class="heading _with-flag">
+            <h3 class="heading__h">Выберите свой вариант</h3>
+            <p class="heading__lead">Ответьте на несколько вопросов и узнайте стоимость ваших окон</p>
+            <div class="heading__flag">
+              <div class="heading__flag__inner"><span class="heading__flag__col">
+                      <svg class="svgsprite _sale">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#sale"></use>
+                      </svg></span><span class="heading__flag__col"><span class="heading__flag__text"><span class="heading__flag__text__muted">Ценим ваше время</span>Прошедшим опрос — скидка</span></span></div>
+            </div>
+          </div>
+          <div class="quiz__inner">
+            <div class="quiz__row">
+              <div class="quiz__row__col">
+                <div class="quiz__number js-quiz__end-hide">Вопрос <span class="js-quiz__current">1 </span></div>
+                <div class="quiz__questions swiper-container">
+                  <div class="swiper-wrapper js-quiz__wrapper">
+                          <div class="quiz-item swiper-slide">
+                            <div class="quiz__number _final">Спасибо!</div>
+                            <div class="quiz-item__question">Вы сэкономили наше время, примите в благодарность скидку.</div>
+                            <form class="quiz-item__row js-form js-quiz__form">
+                              <div class="quiz-item__row__col">
+                                <div class="quiz-item__muted">Номер вашей анкеты</div>
+                                <div class="quiz-item__code"> 
+                                  <input class="quiz-item__code__input js-quiz__code" name="code" readonly><span>
+                                    <button class="js-quiz__btn"><i class="icon-copy"></i>
+                                    </button><span class="quiz-item__tooltip js-quiz__tooltip" data-success="Готово">Скопировать в буфер обмена</span></span>
+                                </div>
+                              </div>
+                              <div class="quiz-item__row__col">
+                                <div class="quiz-item__muted">Оставьте номер, мы зафиксируем вашу скидку</div>
+                                <div class="input-group">
+                                  <input class="input _for-white js-mask" name="phone" required autocomplete="off">
+                                  <button class="btn _for-white">Оставить заявку</button>
+                                  <input class="js-quiz__discount-input" name="discount" hidden>
+                                  <input class="js-quiz__results-input" name="results" hidden>
+                                  <input name="form_id" value="5" hidden>
+                                  <input name="goals_ga" hidden value="{&quot;event&quot;:&quot;form_sent5&quot;,&quot;eventCategory&quot;:&quot;lead&quot;,&quot;eventAction&quot;:&quot;discount&quot;}">
+                                  <input name="form_name" value="Quiz" hidden>
+                                  <input name="email" value="user@host.com" hidden>
+                                  <input name="text" value="info" hidden>
+                                  <input name="email3" value="info@example.com" hidden>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quiz__row__col">
+                <div class="quiz__discount sm-full js-quiz__toggle">
+                  <div class="quiz__discount__per-question process">+<span class="js-quiz__rate"> </span>%
+                    <div class="quiz__discount__per-question__muted">за ответ на вопрос</div>
+                  </div><span class="quiz__discount__success success">Опрос пройден</span>
+                  <div class="quiz__discount__text">Ваша <br>скидка</div>
+                  <div class="quiz__discount__discount"> <span class="js-quiz__discount">0</span>%</div>
+                </div>
+                <div class="quiz__expert">
+                  <div class="quiz__expert__img"><img src="img/quiz/expert.jpg" alt="Анна Пашкова"></div>
+                  <div class="quiz__expert__text">
+                    <div class="quiz__expert__h">Анна Пашкова</div>
+                    <div class="quiz__expert__muted">Эксперт по ЭКО-окнам «САКСЭС»</div>
+                    <div class="quiz__expert__tooltip js-quiz__toggle"><span class="process">Ответьте на вопросы и мы свяжемся с вами, чтобы подобрать то, что нужно вам!</span><span class="success">Спасибо что уделили нам время! Примите от нас скидку в благодарность.</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz__footer"><span class="quiz__back js-quiz__back">Вернуться к предыдущему вопросу</span>
+              <div class="quiz__progress"> <span class="quiz__progress__bar js-quiz__progress"></span><span>Шаг <span class="js-quiz__current">1 </span>
+                  из <span class="js-quiz__total">#</span></span></div><span class="quiz__time js-quiz__toggle"> 
+                <div class="process">Ценим ваше время — прошедшим опрос: скидка на заказ</div>
+                <div class="success">Скидка распространяется на покупку окон, монтаж и другие услуги.</div></span>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="container compare">
         <div class="heading">
           <h3 class="heading__h">Сравнение обычных ПВХ окон с ЭКО-окнами САКСЭС</h3>
@@ -377,8 +454,8 @@
                       </ul>
                     </div>
                     <div class="config-list-item__img-wrapper _1"><img src="img/config/1.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">12 990</span><span class="js-config__target hidden">13 990</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 299</span><span class="js-config__target hidden">1 399</span> 
+                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">17 850</span><span class="js-config__target hidden">21 105</span> 
+                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 785</span><span class="js-config__target hidden">2 110</span> 
                           ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С защитой от холода Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С защитой от холода Rehau Intelio 80 мм">Рассчитать</a>
                   </div>
                   <div class="config-list-item js-config _2">
@@ -420,8 +497,8 @@
                       </ul>
                     </div>
                     <div class="config-list-item__img-wrapper _2"><img src="img/config/2.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">12 990</span><span class="js-config__target hidden">13 990</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 299</span><span class="js-config__target hidden">1 399</span> 
+                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">18 040</span><span class="js-config__target hidden">22 855</span> 
+                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 804</span><span class="js-config__target hidden">2 285</span> 
                           ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С сохранением прохлады в жаркую погоду Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С сохранением прохлады в жаркую погоду Rehau Intelio 80 мм">Рассчитать</a>
                   </div>
                   <div class="config-list-item js-config _3">
@@ -457,8 +534,8 @@
                       </ul>
                     </div>
                     <div class="config-list-item__img-wrapper _3"><img src="img/config/3.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">12 990</span><span class="js-config__target hidden">13 990</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 299</span><span class="js-config__target hidden">1 399</span> 
+                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">18 815</span><span class="js-config__target hidden">25 185</span> 
+                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 881</span><span class="js-config__target hidden">2 518</span> 
                           ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С подавлением шума Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С подавлением шума Rehau Intelio 80 мм">Рассчитать</a>
                   </div>
                   <div class="config-list-item js-config _4">
@@ -506,8 +583,8 @@
                       </div>
                     </div>
                     <div class="config-list-item__img-wrapper _4"><img src="img/config/4.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">12 990</span><span class="js-config__target hidden">13 990</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 299</span><span class="js-config__target hidden">1 399</span> 
+                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">18 040</span><span class="js-config__target hidden">21 295</span> 
+                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 804</span><span class="js-config__target hidden">2 129</span> 
                           ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С технологией «Чистый воздух» Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С технологией «Чистый воздух» Rehau Intelio 80 мм">Рассчитать</a>
                   </div>
                   <div class="config-list-item js-config _5">
@@ -547,8 +624,8 @@
                       </ul>
                     </div>
                     <div class="config-list-item__img-wrapper _5"><img src="img/config/5.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">12 990</span><span class="js-config__target hidden">13 990</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 299</span><span class="js-config__target hidden">1 399</span> 
+                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">22 650</span><span class="js-config__target hidden">31 480</span> 
+                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">2 265</span><span class="js-config__target hidden">3 148</span> 
                           ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С повышенной безопасностью Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С повышенной безопасностью Rehau Intelio 80 мм">Рассчитать</a>
                   </div>
                   <div class="config-list-item js-config _6">
@@ -586,8 +663,8 @@
                       </ul>
                     </div>
                     <div class="config-list-item__img-wrapper _6"><img src="img/config/6.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">12 990</span><span class="js-config__target hidden">13 990</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 299</span><span class="js-config__target hidden">1 399</span> 
+                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Цена за окно 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">19 360</span><span class="js-config__target hidden">25 375</span> 
+                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 936</span><span class="js-config__target hidden">2 537</span> 
                           ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С защитой для детей Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С защитой для детей Rehau Intelio 80 мм">Рассчитать</a>
                   </div>
           </div>

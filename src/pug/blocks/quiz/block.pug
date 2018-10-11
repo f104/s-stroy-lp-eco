@@ -1,0 +1,90 @@
+include quiz-item
+
+.quiz(data-anchor="quiz")
+    .container
+
+        .heading._with-flag
+            h3.heading__h Выберите свой вариант
+            p.heading__lead Ответьте на несколько вопросов и узнайте стоимость ваших окон
+            .heading__flag
+                .heading__flag__inner
+                    span.heading__flag__col
+                        +svgsprite('sale')
+                    span.heading__flag__col
+                        span.heading__flag__text
+                            span.heading__flag__text__muted Ценим ваше время
+                            | Прошедшим опрос — скидка
+
+        .quiz__inner
+            .quiz__row
+                .quiz__row__col
+                    .quiz__number.js-quiz__end-hide Вопрос 
+                        span.js-quiz__current 1 
+                    .quiz__questions.swiper-container
+                        .swiper-wrapper.js-quiz__wrapper
+                            +quiz-item(
+                                final=true
+                                )
+                                .quiz-item__question Вы сэкономили наше время, примите в благодарность скидку.
+                                form.quiz-item__row.js-form.js-quiz__form
+                                    .quiz-item__row__col
+                                        .quiz-item__muted Номер вашей анкеты
+                                        .quiz-item__code 
+                                            input.quiz-item__code__input.js-quiz__code(name='code' readonly)
+                                            span
+                                                button.js-quiz__btn
+                                                    +icon('copy')
+                                                span.quiz-item__tooltip.js-quiz__tooltip(data-success='Готово') Скопировать в буфер обмена
+                                    .quiz-item__row__col
+                                        .quiz-item__muted Оставьте номер, мы зафиксируем вашу скидку
+                                        .input-group
+                                            input.input._for-white.js-mask(name='phone' required autocomplete='off')
+                                            button.btn._for-white Оставить заявку
+                                            input.js-quiz__discount-input(name='discount' hidden)
+                                            input.js-quiz__results-input(name='results' hidden)
+                                            input(name='form_id' value='5' hidden)
+                                            input(
+                                                name='goals_ga' 
+                                                hidden 
+                                                value='{"event":"form_sent5","eventCategory":"lead","eventAction":"discount"}'
+                                            )
+                                            input(name='form_name' value='Quiz' hidden)
+                                            input(name='email' value='user@host.com' hidden)
+                                            input(name='text' value='info' hidden)
+                                            input(name='email3' value='info@example.com' hidden)
+                .quiz__row__col
+                    .quiz__discount.sm-full.js-quiz__toggle
+                        .quiz__discount__per-question.process +
+                                span.js-quiz__rate 
+                                | %
+                                .quiz__discount__per-question__muted за ответ на вопрос
+                        span.quiz__discount__success.success Опрос пройден
+                        .quiz__discount__text Ваша 
+                            br
+                            | скидка
+                        .quiz__discount__discount 
+                            span.js-quiz__discount 0
+                            | %
+                    .quiz__expert
+                        .quiz__expert__img
+                            img(src='img/quiz/expert.jpg' alt='Анна Пашкова')
+                        .quiz__expert__text
+                            .quiz__expert__h Анна Пашкова
+                            .quiz__expert__muted Эксперт по ЭКО-окнам «САКСЭС»
+                            .quiz__expert__tooltip.js-quiz__toggle
+                                span.process Ответьте на вопросы и мы свяжемся с вами, чтобы подобрать то, что нужно вам!
+                                span.success Спасибо что уделили нам время! Примите от нас скидку в благодарность.
+
+            .quiz__footer
+                span.quiz__back.js-quiz__back Вернуться к предыдущему вопросу
+                .quiz__progress 
+                    span.quiz__progress__bar.js-quiz__progress
+                    span
+                        | Шаг 
+                        span.js-quiz__current 1 
+                        |
+                        | из 
+                        span.js-quiz__total #
+                span.quiz__time.js-quiz__toggle 
+                    .process Ценим ваше время — прошедшим опрос: скидка на заказ
+                    .success Скидка распространяется на покупку окон, монтаж и другие услуги.

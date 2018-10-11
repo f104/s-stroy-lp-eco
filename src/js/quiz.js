@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import Swiper from 'swiper';
+import Swiper from 'swiper/dist/js/swiper.min.js';
 import Hogan from 'hogan.js';
 const quiz = {
 
@@ -29,7 +29,7 @@ const quiz = {
         let $wrapper = $('.js-quiz__wrapper'),
                 questions = data.questions,
                 html = [];
-        for (let index of Object.keys(questions)) {
+        for (let index in questions) {
             let answers = [];
             questions[index]['answers'].forEach(function (answer) {
                 answers.push(that.tpl.answer.render(answer))

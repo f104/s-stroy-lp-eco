@@ -1,0 +1,12 @@
+mixin quiz-item()
+    .quiz-item.swiper-slide
+        if (!attributes.final)
+            .quiz__number Вопрос 
+                =attributes.number
+        else
+            .quiz__number._final Спасибо!
+        block
+        if (!attributes.final)
+            ul.quiz-item__responces.sm-full
+                each responce in attributes.responces
+                    li.quiz-item__responces__item.js-quiz__responce= responce

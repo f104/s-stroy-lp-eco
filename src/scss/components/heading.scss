@@ -40,19 +40,18 @@
             display: block;
             position: absolute;
             right: 0;
-            top: 10px;
+            top: 70px;
         }
-        @include media-breakpoint-up(xl) {
+/*        @include media-breakpoint-up(xl) {
             right: -70px;
-        }
+        }*/
         &__inner {
-            box-shadow: 0px 4px 30px rgba(43, 76, 185, 0.7);
             display: flex;
             align-items: center;
             padding: 0 10px 0 0;
             width: 320px;
             height: 64px;
-            background-color: $color-primary;
+            background-color: $color-secondary;
             &:before {
                 content: '';
                 position: absolute;
@@ -60,14 +59,13 @@
                 top: 0;
                 bottom: 0;
                 width: 50px;
-                background-color: $color-primary;
+                background-color: $color-secondary;
                 transform: skewX(20deg);
                 border-radius: 10px 0 0 5px;
-                z-index: -1;
             }
-            @include media-breakpoint-up(xl) {
+/*            @include media-breakpoint-up(xl) {
                 border-radius: 0 10px 10px 0;
-            }
+            }*/
         }
         &__text {
             color: $color-bg;
