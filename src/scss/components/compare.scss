@@ -376,9 +376,10 @@
                 &:after {
                     content: '';
                     position: absolute;
+                    top: 0;
                     right: 0;
                     height: 100%;
-                    background: linear-gradient(to right, transparent, #34b0a8);
+                    background: linear-gradient(to right, rgba(52, 176, 168, 0), rgba(52, 176, 168, 1));
                     width: 10%;
                 }
                 &._secondary {
@@ -386,7 +387,7 @@
                     &:after {
                         left: 0;
                         right: auto;
-                        background: linear-gradient(to left, transparent, #34b0a8);
+                        background: linear-gradient(to left, rgba(52, 176, 168, 0), rgba(52, 176, 168, 1));
                     }
                 }
             }
