@@ -1,5 +1,5 @@
 mixin config-list-item()
-    div(class='config-list-item js-config _' + attributes.type)
+    div(class='config-list-item js-config _' + attributes.type id="config-" + attributes.type)
         h5.config-list-item__h=attributes.title
         .config-list-item__badge
             +svgsprite(attributes.badgeIcon)
