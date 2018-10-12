@@ -33,6 +33,9 @@
             border-top: 18px solid $color-bg;
 
         }
+        &._sm {
+            width: 280px;
+        }
         &._img-right {
             display: flex;
             align-items: flex-start;

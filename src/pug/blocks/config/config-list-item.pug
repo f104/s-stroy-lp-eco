@@ -11,13 +11,13 @@ mixin config-list-item()
                 span.config-list-item__togglers__item__inner Комплект плюс+
         ul.config-list-item__list
             li.config-list-item__list__item
-                a.dashed(href='#') Комплекс технологий 
+                a.dashed.js-nav-link(href='#tech') Комплекс технологий 
                     span.nowrap ЭКО-окон САКСЭС
         block
         div(class='config-list-item__img-wrapper _' + attributes.type)
             img(src=attributes.image)
         .config-list-item__price
-            span.config-list-item__price__desc Цена за окно 130×140 см
+            span.config-list-item__price__desc Окно под ключ 130×140 см
             span.config-list-item__price__cost
                 span.js-config__target=attributes.price1
                 span.js-config__target.hidden=attributes.price2
