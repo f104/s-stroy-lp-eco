@@ -12,7 +12,7 @@
    viewBox="0 0 166 24"
    version="1.1"
    id="svg839"
-   sodipodi:docname="riverstart.svg"
+   sodipodi:docname="riverstart-color.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata845">
@@ -42,7 +42,7 @@
      id="namedview841"
      showgrid="false"
      inkscape:zoom="7.560241"
-     inkscape:cx="83.661355"
+     inkscape:cx="84.32271"
      inkscape:cy="12"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -59,7 +59,7 @@
      id="path833"
      clip-rule="evenodd"
      fill-rule="evenodd"
-     style="fill:#0e0e0e;fill-opacity:1" />
+     style="fill:#5dcb4e;fill-opacity:1" />
   <path
      fill-rule="evenodd"
      clip-rule="evenodd"

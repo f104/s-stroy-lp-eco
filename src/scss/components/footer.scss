@@ -147,4 +147,27 @@
             margin-right: 0.5ex;
         }
     }
+    &__madein {
+        display: block;
+        width: 166px;
+        height: 24px;
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include transition(opacity);
+            opacity: .5;
+            &._color {
+                opacity: 0;
+            }
+        }
+        &:hover {
+            #{$root}__madein__img {
+                opacity: 0;
+                &._color {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
