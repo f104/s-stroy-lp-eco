@@ -40,6 +40,16 @@
 .hidden {
     display: none !important;
 }
+.hidden-sm {
+    @include media-breakpoint-down(sm) {
+        display: none !important;
+    }
+}
+.visible-sm {
+    @include media-breakpoint-up(md) {
+        display: none !important;
+    }
+}
 .nowrap {
     white-space: nowrap;
 }

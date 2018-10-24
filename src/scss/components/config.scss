@@ -68,22 +68,54 @@
 }
 
 .config-list {
+    margin-left: - map-get($container-paddings, sm);
+    margin-right: - map-get($container-paddings, sm);
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+        margin-left: - map-get($container-paddings, md);
+        margin-right: - map-get($container-paddings, md);
+        margin-bottom: 0;
+    }
+    @include media-breakpoint-up(lg) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
     .config-list-item {
-        margin-left: - map-get($container-paddings, sm);
-        margin-right: - map-get($container-paddings, sm);
-        margin-bottom: 20px;
         @include media-breakpoint-up(md) {
-            margin-left: - map-get($container-paddings, md);
-            margin-right: - map-get($container-paddings, md);
             margin-bottom: 15px;
         }
         @include media-breakpoint-up(lg) {
-            margin-left: 0;
-            margin-right: 0;
             margin-bottom: 40px;
         }
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+    .swiper-wrapper {
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+    }
+    .swiper-pagination {
+        position: relative;
+        bottom: auto;
+        margin-top: 18px;
+        margin-bottom: 10px;
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+    .swiper-fraction {
+        font-weight: 500;
+        line-height: 21px;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #C2BBCD;
+        @include media-breakpoint-up(md) {
+            display: none;
         }
     }
 }
@@ -109,7 +141,7 @@
     &__h {
         font-weight: 600;
         font-size: 19px;
-        margin-bottom: 24px;
+        margin-bottom: 18px;
         @include media-breakpoint-up(md) {
             font-size: 25px;
             margin-bottom: 27px;
@@ -144,7 +176,7 @@
         }
     }
     &__togglers {
-        margin-bottom: 35px;
+        margin-bottom: 22px;
         @include media-breakpoint-up(md) {
             margin-bottom: 50px;
         }
@@ -153,24 +185,24 @@
         }
         &__item {
             font-weight: 700;
-            font-size: 16px;
-            line-height: 36px;
+            font-size: 12px;
+            line-height: 25px;
             color: $color-primary;
-            padding: 0 12px;
+            padding: 0 8px 1px;
             border: 1px solid $color-primary;
             border-radius: 3px;
-            margin-bottom: 9px;
             cursor: pointer;
+            display: inline-block;
+            margin-right: 5px;
             @include transition(all);
             &:last-child {
-                margin-bottom: 0;
                 margin-right: 0;
             }
             &__inner {
                 border-bottom: 1px dashed;
             }
             @include ie10up {
-                height: 38px;
+                height: 27px;
             }
             &._active, &:hover {
                 background-color: $color-primary;
@@ -184,9 +216,13 @@
                 pointer-events: none;
             }
             @include media-breakpoint-up(md) {
-                display: inline-block;
+                font-size: 16px;
+                line-height: 36px;
+                padding: 0 12px;
                 margin-right: 11px;
-                margin-bottom: 11px;
+                @include ie10up {
+                    height: 38px;
+                }
             }
         }
     }
@@ -194,6 +230,16 @@
         margin-left: - map-get($container-paddings, sm);
         margin-right: - map-get($container-paddings, sm);
         margin-bottom: 20px;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, #EDF6FC 0%, rgba(237, 246, 252, 0) 100%);
+        }
         @include media-breakpoint-up(md) {
             margin: 0;
             position: absolute;
@@ -214,12 +260,6 @@
                 z-index: 1;
             }
             &:after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
                 right: 183px;
                 background: linear-gradient(90.21deg, #EDF6FC 0.14%, rgba(237, 246, 252, 0) 99.86%);
                 opacity: 0.7;

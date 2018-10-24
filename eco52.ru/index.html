@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/libs/jquery.jgrowl.css">
     <link rel="stylesheet" href="fonts/Lato/lato.css">
     <link rel="stylesheet" href="fonts/Fontello/css/fontello.css">
-    <link rel="stylesheet" href="assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="assets/css/main.css?v=1.1.0">
   </head>
   <body class="body">
         <header class="header">
@@ -33,10 +33,10 @@
           <div class="nav js-nav">
             <div class="container">
               <ul class="nav__list">
-                <li class="nav__list__item"> <a class="nav__list__link js-nav-link" href="#quiz">Подобрать вариант</a></li>
+                <li class="nav__list__item hidden-sm"><a class="nav__list__link js-nav-link" href="#quiz">Подобрать вариант</a></li>
                 <li class="nav__list__item"> <a class="nav__list__link js-nav-link" href="#eco">Эко-инжиниринг</a></li>
-                <li class="nav__list__item"> <a class="nav__list__link js-nav-link" href="#compare">Сравнение</a></li>
-                <li class="nav__list__item"> <a class="nav__list__link js-nav-link" href="#tech">Технологии</a></li>
+                <li class="nav__list__item hidden-sm"> <a class="nav__list__link js-nav-link" href="#compare">Сравнение</a></li>
+                <li class="nav__list__item hidden-sm"> <a class="nav__list__link js-nav-link" href="#tech">Технологии</a></li>
                 <li class="nav__list__item"> <a class="nav__list__link js-nav-link" href="#config">Комплектации</a></li>
                 <li class="nav__list_item"> <a class="nav__list__link js-nav-link" href="#about">О производстве</a></li>
               </ul>
@@ -47,7 +47,7 @@
           <div class="container">
             <div class="main__text">
               <h3 class="main__text__h"> <span class="main__text__h__accent">Эко-окна </span>— здоровый микроклимат в вашем доме</h3>
-              <p class="main__text__text">Обычные окна сохраняют тепло, но не способствуют формированию здорового микроклимата для жизни. </p>
+              <p class="main__text__text hidden-sm">Обычные окна сохраняют тепло, но не способствуют формированию здорового микроклимата для жизни. </p>
               <p class="main__text__text">Наш специалист по <strong class="color-secondary">ЭКО-инжинирингу </strong>бесплатно снимет замеры параметров вашего помещения и предложит подходящие решения умного остекления.</p>
             </div>
           </div>
@@ -123,7 +123,7 @@
           </div>
         </div>
       </div>
-      <section class="quiz" id="quiz">
+      <section class="quiz hidden-sm" id="quiz">
         <div class="container">
           <div class="heading _with-flag">
             <h3 class="heading__h">Выберите свой вариант</h3>
@@ -204,8 +204,9 @@
         <div class="container">
           <div class="eco__text">
             <h3 class="eco__text__h">Здоровый микроклимат в вашем доме</h3>
-            <p class="eco__text__lead">Улучшите качество жизни вашей семьи</p>
-            <p class="eco__text__text"> <strong class="color-secondary-dark">ЭКО-инжиниринг </strong>— наша бесплатная экспертиза микроклимата. <br>С помощью специального оборудования специалист <strong class="color-secondary-dark">исследует помещение на соответствие </strong>действующим нормативам для комфортного микроклимата в вашей квартире (доме). На основании данного анализа специалист предложит вам оптимальный вариант остекления, решающий задачу правильного температурного баланса, тишины, влажности и воздухообмена, а также безопасности детей и самого жилого пространства.</p>
+            <p class="eco__text__lead hidden-sm">Улучшите качество жизни вашей семьи</p>
+            <p class="eco__text__lead visible-sm">Проверить на соответствие действующим нормативам для комфортного микроклимата:</p>
+            <p class="eco__text__text hidden-sm"> <strong class="color-secondary-dark">ЭКО-инжиниринг </strong>— наша бесплатная экспертиза микроклимата. <br>С помощью специального оборудования специалист <strong class="color-secondary-dark">исследует помещение на соответствие </strong>действующим нормативам для комфортного микроклимата в вашей квартире (доме). На основании данного анализа специалист предложит вам оптимальный вариант остекления, решающий задачу правильного температурного баланса, тишины, влажности и воздухообмена, а также безопасности детей и самого жилого пространства.</p>
             <ul class="eco__text__list">
               <li class="eco__text__list__item">Температура воздуха — +20‑+25°C.</li>
               <li class="eco__text__list__item">Относительная влажность — 35‑55%.</li>
@@ -248,7 +249,7 @@
           </div>
         </div>
       </div>
-      <section class="container compare" id="compare">
+      <section class="container compare hidden-sm" id="compare">
         <div class="heading">
           <h3 class="heading__h">Сравнение обычных ПВХ окон с ЭКО-окнами САКСЭС</h3>
         </div>
@@ -298,7 +299,7 @@
           
         </div>
       </section>
-      <div class="compare-bg">
+      <div class="compare-bg hidden-sm">
         <div class="compare-bg__bg"></div>
         <div class="container">
           <div class="compare-bg__h">Остались сомнения<br>Тогда сравним:</div>
@@ -350,7 +351,7 @@
           </div><a class="btn _secondary _solid _for-white compare-bg__btn js-popup" href="#calc" data-action="Сравнение">Рассчитать свои эко-окна</a><img class="compare-bg__window" src="img/compare/window.png" alt="ЭКО-окно САКСЭС">
         </div>
       </div>
-      <section class="tech" id="tech">
+      <section class="tech hidden-sm" id="tech">
         <div class="container">
           <div class="heading">
             <h3 class="heading__h">Технологии ЭКО-окон завода «САКСЭС»</h3>
@@ -567,252 +568,261 @@
         <div class="container">
           <div class="heading">
             <h3 class="heading__h">Комплектации <span class="nowrap">ЭКО-окон</span></h3>
-            <h3 class="heading__lead">от оконного завода «САКСЭС»</h3>
+            <h3 class="heading__lead hidden-sm">от оконного завода «САКСЭС»</h3>
           </div>
-          <div class="config__intro-bg">ЭКО-окна САКСЭС — это премиальные решения для здоровья всей вашей семьи, <strong>окна которые дышат</strong>. Забудьте о шуме при проветривании, пыли на подоконнике, лишних аллергенах, жаре летом и холоде зимой, — дышите свежим воздухом и будьте здоровы!</div>
+          <div class="config__intro-bg hidden-sm">ЭКО-окна САКСЭС — это премиальные решения для здоровья всей вашей семьи, <strong>окна которые дышат</strong>. Забудьте о шуме при проветривании, пыли на подоконнике, лишних аллергенах, жаре летом и холоде зимой, — дышите свежим воздухом и будьте здоровы!</div>
           <div class="config__intro-h">Выбирайте свой вариант по назначению</div>
-          <div class="config__intro-text">Все представленые окна имеют комплекс технологий ЭКО-окон САКСЭС. В зависимости от назначения мы разработали индивидуальные дополнения, чтобы сделать премиальные эко-окна ещё функциональнее.</div>
+          <div class="config__intro-text">Все представленые окна имеют комплекс технологий ЭКО-окон САКСЭС. <span class="hidden-sm">В зависимости от назначения мы разработали индивидуальные дополнения, чтобы сделать премиальные эко-окна ещё функциональнее.</span></div>
           <div class="config-list">
-                  <div class="config-list-item js-config _1" id="config-1">
-                    <h5 class="config-list-item__h">С защитой от холода</h5>
-                    <div class="config-list-item__badge">
-                          <svg class="svgsprite _dop-1">
-                            <use xlink:href="assets/img/sprites/svgsprites.svg#dop-1"></use>
-                          </svg><span class="config-list-item__badge__text">Теплозащита</span>
-                    </div>
-                    <ul class="config-list-item__togglers">
-                      <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
-                      <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
-                    </ul>
-                    <ul class="config-list-item__list">
-                      <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
-                    </ul>
-                    <div class="js-config__target">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Ультратеплый стеклопакет 40 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right _sm"><span class="tooltip__text">Эффективнее сохраняет тепло даже в самые суровые морозы.</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span></li>
-                        <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
-                        <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                        <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
-                      </ul>
-                    </div>
-                    <div class="js-config__target hidden">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Intelio 80 мм</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Ультратеплый стеклопакет 48 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right _sm"><span class="tooltip__text">Эффективнее сохраняет тепло даже в самые суровые морозы.</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span></li>
-                        <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
-                        <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                        <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
-                      </ul>
-                    </div>
-                    <div class="config-list-item__img-wrapper _1"><img class="config-list-item__img" src="img/config/1.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">17 850</span><span class="js-config__target hidden">21 105</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 785</span><span class="js-config__target hidden">2 110</span> 
-                          ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С защитой от холода Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С защитой от холода Rehau Intelio 80 мм">Рассчитать</a>
-                  </div>
-                  <div class="config-list-item js-config _2" id="config-2">
-                    <h5 class="config-list-item__h">С сохранением прохлады в жаркую погоду</h5>
-                    <div class="config-list-item__badge">
-                          <svg class="svgsprite _dop-4">
-                            <use xlink:href="assets/img/sprites/svgsprites.svg#dop-4"></use>
-                          </svg><span class="config-list-item__badge__text">Солнцезащита</span>
-                    </div>
-                    <ul class="config-list-item__togglers">
-                      <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
-                      <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
-                    </ul>
-                    <ul class="config-list-item__list">
-                      <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
-                    </ul>
-                    <div class="js-config__target">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Солнцезащитный стеклопакет 40 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Солнцезащитный стеклопакет избавит от жары в помещении, смягчит проникающий через стекло ультрафиолет и снизит нагрузку на кондиционер.</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span>(мультифункциональное солнцезащитное стекло)</li>
-                        <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
-                        <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                        <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
-                      </ul>
-                    </div>
-                    <div class="js-config__target hidden">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Солнцезащитный стеклопакет 48 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Солнцезащитный стеклопакет избавит от жары в помещении, смягчит проникающий через стекло ультрафиолет и снизит нагрузку на кондиционер.</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span>(Stopsol солнезащитное стекло)</li>
-                        <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
-                        <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                        <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
-                      </ul>
-                    </div>
-                    <div class="config-list-item__img-wrapper _2"><img class="config-list-item__img" src="img/config/2.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">18 040</span><span class="js-config__target hidden">22 855</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 804</span><span class="js-config__target hidden">2 285</span> 
-                          ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С сохранением прохлады в жаркую погоду Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С сохранением прохлады в жаркую погоду Rehau Intelio 80 мм">Рассчитать</a>
-                  </div>
-                  <div class="config-list-item js-config _3" id="config-3">
-                    <h5 class="config-list-item__h">С подавлением шума</h5>
-                    <div class="config-list-item__badge">
-                          <svg class="svgsprite _dop-3">
-                            <use xlink:href="assets/img/sprites/svgsprites.svg#dop-3"></use>
-                          </svg><span class="config-list-item__badge__text">Доп. тишина</span>
-                    </div>
-                    <ul class="config-list-item__togglers">
-                      <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
-                      <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
-                    </ul>
-                    <ul class="config-list-item__list">
-                      <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
-                    </ul>
-                    <div class="js-config__target">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Звукоизоляционный стеклопакет 40 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Повышенные звукоизоляционные свойства за счет использования камер разной ширины и стекла 6 или 8 мм. Звукоизоляция достигает 50 дБ (стандартный пакет 20 дБ).</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span>(антирезонансный)</li>
-                        <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
-                        <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                        <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
-                      </ul>
-                    </div>
-                    <div class="js-config__target hidden">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Звукоизоляционный стеклопакет 48 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Повышенные звукоизоляционные свойства за счет использования камер разной ширины и стекла 6 или 8 мм. Звукоизоляция достигает 50 дБ (стандартный пакет 20 дБ).</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span>(звукоизоляционное стекло триплекс)</li>
-                        <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
-                        <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                        <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
-                      </ul>
-                    </div>
-                    <div class="config-list-item__img-wrapper _3"><img class="config-list-item__img" src="img/config/3.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">18 815</span><span class="js-config__target hidden">25 185</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 881</span><span class="js-config__target hidden">2 518</span> 
-                          ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С подавлением шума Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С подавлением шума Rehau Intelio 80 мм">Рассчитать</a>
-                  </div>
-                  <div class="config-list-item js-config _4" id="config-4">
-                    <h5 class="config-list-item__h">С технологией «Чистый воздух»</h5>
-                    <div class="config-list-item__badge">
-                          <svg class="svgsprite _dop-2">
-                            <use xlink:href="assets/img/sprites/svgsprites.svg#dop-2"></use>
-                          </svg><span class="config-list-item__badge__text">Приток воздуха</span>
-                    </div>
-                    <ul class="config-list-item__togglers">
-                      <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
-                      <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
-                    </ul>
-                    <ul class="config-list-item__list">
-                      <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
-                    </ul>
-                    <div class="js-config__target">
-                      <div class="config-list-item__feats-wrapper">
-                        <ul class="config-list-item__feats">
-                          <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
-                          <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Мультифункциональный стеклопакет 40 мм</span></li>
-                          <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
-                          <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                          <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                      <div class="config-list-item swiper-slide js-config _1" id="config-1">
+                        <h5 class="config-list-item__h">С защитой от холода</h5>
+                        <div class="config-list-item__img-wrapper _1"><img class="config-list-item__img" src="img/config/1-sm.jpg"></div>
+                        <div class="config-list-item__badge">
+                              <svg class="svgsprite _dop-1">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#dop-1"></use>
+                              </svg><span class="config-list-item__badge__text">Теплозащита</span>
+                        </div>
+                        <ul class="config-list-item__togglers">
+                          <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
+                          <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
                         </ul>
-                        <ul class="config-list-item__feats">
-                          <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Приточный клапан Air-Box<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-top"><span class="tooltip__text">Приточный клапан Air‑Box</span><span class="tooltip__img"><img src="img/config/tooltip-airbox.png"></span></span></span></span></li>
-                          <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Мойка воздуха Бонеко<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-top"><span class="tooltip__text">Мойка воздуха Бонеко</span><span class="tooltip__img"><img src="img/config/tooltip-boneko.png"></span></span></span></span></li>
+                        <ul class="config-list-item__list hidden-sm">
+                          <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
                         </ul>
+                        <div class="js-config__target">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Ультратеплый стеклопакет 40 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right _sm"><span class="tooltip__text">Эффективнее сохраняет тепло даже в самые суровые морозы.</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span></li>
+                            <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
+                            <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                            <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                          </ul>
+                        </div>
+                        <div class="js-config__target hidden">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Intelio 80 мм</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Ультратеплый стеклопакет 48 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right _sm"><span class="tooltip__text">Эффективнее сохраняет тепло даже в самые суровые морозы.</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span></li>
+                            <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
+                            <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                            <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                          </ul>
+                        </div>
+                        <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">17 850</span><span class="js-config__target hidden">21 105</span> 
+                            ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 785</span><span class="js-config__target hidden">2 110</span> 
+                              ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С защитой от холода Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С защитой от холода Rehau Intelio 80 мм">Рассчитать</a>
                       </div>
-                    </div>
-                    <div class="js-config__target hidden">
-                      <div class="config-list-item__feats-wrapper">
-                        <ul class="config-list-item__feats">
-                          <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
-                          <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Мультифункциональный стеклопакет 48 мм</span></li>
-                          <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
-                          <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                          <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                      <div class="config-list-item swiper-slide js-config _2" id="config-2">
+                        <h5 class="config-list-item__h">С сохранением прохлады в жаркую погоду</h5>
+                        <div class="config-list-item__img-wrapper _2"><img class="config-list-item__img" src="img/config/2-sm.jpg"></div>
+                        <div class="config-list-item__badge">
+                              <svg class="svgsprite _dop-4">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#dop-4"></use>
+                              </svg><span class="config-list-item__badge__text">Солнцезащита</span>
+                        </div>
+                        <ul class="config-list-item__togglers">
+                          <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
+                          <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
                         </ul>
-                        <ul class="config-list-item__feats">
-                          <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Проветриватель Аэропак<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-top"><span class="tooltip__text">Проветриватель Аэропак</span><span class="tooltip__img"><img src="img/config/tooltip-aeropack.png"></span></span></span></span></li>
-                          <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Мойка воздуха Бонеко<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-top"><span class="tooltip__text">Мойка воздуха Бонеко</span><span class="tooltip__img"><img src="img/config/tooltip-boneko.png"></span></span></span></span></li>
+                        <ul class="config-list-item__list hidden-sm">
+                          <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
                         </ul>
+                        <div class="js-config__target">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Солнцезащитный стеклопакет 40 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Солнцезащитный стеклопакет избавит от жары в помещении, смягчит проникающий через стекло ультрафиолет и снизит нагрузку на кондиционер.</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span>(мультифункциональное солнцезащитное стекло)</li>
+                            <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
+                            <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                            <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                          </ul>
+                        </div>
+                        <div class="js-config__target hidden">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Солнцезащитный стеклопакет 48 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Солнцезащитный стеклопакет избавит от жары в помещении, смягчит проникающий через стекло ультрафиолет и снизит нагрузку на кондиционер.</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span>(Stopsol солнезащитное стекло)</li>
+                            <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
+                            <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                            <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                          </ul>
+                        </div>
+                        <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">18 040</span><span class="js-config__target hidden">22 855</span> 
+                            ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 804</span><span class="js-config__target hidden">2 285</span> 
+                              ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С сохранением прохлады в жаркую погоду Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С сохранением прохлады в жаркую погоду Rehau Intelio 80 мм">Рассчитать</a>
                       </div>
-                    </div>
-                    <div class="config-list-item__img-wrapper _4"><img class="config-list-item__img" src="img/config/4.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">18 040</span><span class="js-config__target hidden">21 295</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 804</span><span class="js-config__target hidden">2 129</span> 
-                          ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С технологией «Чистый воздух» Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С технологией «Чистый воздух» Rehau Intelio 80 мм">Рассчитать</a>
-                  </div>
-                  <div class="config-list-item js-config _5" id="config-5">
-                    <h5 class="config-list-item__h">С повышенной безопасностью</h5>
-                    <div class="config-list-item__badge">
-                          <svg class="svgsprite _dop-5">
-                            <use xlink:href="assets/img/sprites/svgsprites.svg#dop-5"></use>
-                          </svg><span class="config-list-item__badge__text">Антивзлом</span>
-                    </div>
-                    <ul class="config-list-item__togglers">
-                      <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
-                      <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
-                    </ul>
-                    <ul class="config-list-item__list">
-                      <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
-                    </ul>
-                    <div class="js-config__target">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Бронированный стеклопакет 40 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Взломостойкая фурнитура WK1 и WK2 + специальное ударопрочное стекло (защитная плёнка класса А2 или триплекс).</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span> 
-                          (защитная пленка А2)
-                        </li>
-                        <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Фурнитура GU (Германия) противовзломная, класс WK1 </span></li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Ручка L.DESIGN с ключем</span></li>
-                      </ul>
-                    </div>
-                    <div class="js-config__target hidden">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Бронированный стеклопакет 48 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Взломостойкая фурнитура WK1 и WK2 + специальное ударопрочное стекло (защитная плёнка класса А2 или триплекс).</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span> 
-                          (бронированное стекло триплекс)
-                        </li>
-                        <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Фурнитура GU (Германия) противовзломная, класс WK2 </span></li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Ручка L.DESIGN с ключем</span></li>
-                      </ul>
-                    </div>
-                    <div class="config-list-item__img-wrapper _5"><img class="config-list-item__img" src="img/config/5.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">22 650</span><span class="js-config__target hidden">31 480</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">2 265</span><span class="js-config__target hidden">3 148</span> 
-                          ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С повышенной безопасностью Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С повышенной безопасностью Rehau Intelio 80 мм">Рассчитать</a>
-                  </div>
-                  <div class="config-list-item js-config _6" id="config-6">
-                    <h5 class="config-list-item__h">С защитой для детей</h5>
-                    <div class="config-list-item__badge">
-                          <svg class="svgsprite _dop-6">
-                            <use xlink:href="assets/img/sprites/svgsprites.svg#dop-6"></use>
-                          </svg><span class="config-list-item__badge__text">Детская безопасность</span>
-                    </div>
-                    <ul class="config-list-item__togglers">
-                      <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
-                      <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
-                    </ul>
-                    <ul class="config-list-item__list">
-                      <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
-                    </ul>
-                    <div class="js-config__target">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Прочный стеклопакет. Противоосколочная пленка<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Обезопасить ребенка — важная задача. Детский замок + специальное ударопрочное стекло, противоосколочная пленка. Такой стеклопакет также защитит и от внешнего воздействия природных невзгод.</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span></li>
-                        <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
-                        <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                        <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Детский замок</span></li>
-                      </ul>
-                    </div>
-                    <div class="js-config__target hidden">
-                      <ul class="config-list-item__feats">
-                        <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Прочный стеклопакет (бронированное стекло триплекс)<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Обезопасить ребенка — важная задача. Детский замок + специальное ударопрочное стекло, противоосколочная пленка. Такой стеклопакет также защитит и от внешнего воздействия природных невзгод.</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span></li>
-                        <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
-                        <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
-                        <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
-                        <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Детский замок с тросиком</span></li>
-                      </ul>
-                    </div>
-                    <div class="config-list-item__img-wrapper _6"><img class="config-list-item__img" src="img/config/6.jpg"></div>
-                    <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">19 360</span><span class="js-config__target hidden">25 375</span> 
-                        ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 936</span><span class="js-config__target hidden">2 537</span> 
-                          ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С защитой для детей Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С защитой для детей Rehau Intelio 80 мм">Рассчитать</a>
-                  </div>
+                      <div class="config-list-item swiper-slide js-config _3" id="config-3">
+                        <h5 class="config-list-item__h">С подавлением шума</h5>
+                        <div class="config-list-item__img-wrapper _3"><img class="config-list-item__img" src="img/config/3-sm.jpg"></div>
+                        <div class="config-list-item__badge">
+                              <svg class="svgsprite _dop-3">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#dop-3"></use>
+                              </svg><span class="config-list-item__badge__text">Доп. тишина</span>
+                        </div>
+                        <ul class="config-list-item__togglers">
+                          <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
+                          <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
+                        </ul>
+                        <ul class="config-list-item__list hidden-sm">
+                          <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
+                        </ul>
+                        <div class="js-config__target">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Звукоизоляционный стеклопакет 40 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Повышенные звукоизоляционные свойства за счет использования камер разной ширины и стекла 6 или 8 мм. Звукоизоляция достигает 50 дБ (стандартный пакет 20 дБ).</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span>(антирезонансный)</li>
+                            <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
+                            <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                            <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                          </ul>
+                        </div>
+                        <div class="js-config__target hidden">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Звукоизоляционный стеклопакет 48 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Повышенные звукоизоляционные свойства за счет использования камер разной ширины и стекла 6 или 8 мм. Звукоизоляция достигает 50 дБ (стандартный пакет 20 дБ).</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span>(звукоизоляционное стекло триплекс)</li>
+                            <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
+                            <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                            <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                          </ul>
+                        </div>
+                        <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">18 815</span><span class="js-config__target hidden">25 185</span> 
+                            ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 881</span><span class="js-config__target hidden">2 518</span> 
+                              ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С подавлением шума Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С подавлением шума Rehau Intelio 80 мм">Рассчитать</a>
+                      </div>
+                      <div class="config-list-item swiper-slide js-config _4" id="config-4">
+                        <h5 class="config-list-item__h">С технологией «Чистый воздух»</h5>
+                        <div class="config-list-item__img-wrapper _4"><img class="config-list-item__img" src="img/config/4-sm.jpg"></div>
+                        <div class="config-list-item__badge">
+                              <svg class="svgsprite _dop-2">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#dop-2"></use>
+                              </svg><span class="config-list-item__badge__text">Приток воздуха</span>
+                        </div>
+                        <ul class="config-list-item__togglers">
+                          <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
+                          <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
+                        </ul>
+                        <ul class="config-list-item__list hidden-sm">
+                          <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
+                        </ul>
+                        <div class="js-config__target">
+                          <div class="config-list-item__feats-wrapper">
+                            <ul class="config-list-item__feats">
+                              <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
+                              <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Мультифункциональный стеклопакет 40 мм</span></li>
+                              <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
+                              <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                              <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                            </ul>
+                            <ul class="config-list-item__feats">
+                              <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Приточный клапан Air-Box<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-top"><span class="tooltip__text">Приточный клапан Air‑Box</span><span class="tooltip__img"><img src="img/config/tooltip-airbox.png"></span></span></span></span></li>
+                              <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Мойка воздуха Бонеко<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-top"><span class="tooltip__text">Мойка воздуха Бонеко</span><span class="tooltip__img"><img src="img/config/tooltip-boneko.png"></span></span></span></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="js-config__target hidden">
+                          <div class="config-list-item__feats-wrapper">
+                            <ul class="config-list-item__feats">
+                              <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
+                              <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Мультифункциональный стеклопакет 48 мм</span></li>
+                              <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
+                              <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                              <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                            </ul>
+                            <ul class="config-list-item__feats">
+                              <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Проветриватель Аэропак<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-top"><span class="tooltip__text">Проветриватель Аэропак</span><span class="tooltip__img"><img src="img/config/tooltip-aeropack.png"></span></span></span></span></li>
+                              <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Мойка воздуха Бонеко<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-top"><span class="tooltip__text">Мойка воздуха Бонеко</span><span class="tooltip__img"><img src="img/config/tooltip-boneko.png"></span></span></span></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">18 040</span><span class="js-config__target hidden">21 295</span> 
+                            ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 804</span><span class="js-config__target hidden">2 129</span> 
+                              ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С технологией «Чистый воздух» Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С технологией «Чистый воздух» Rehau Intelio 80 мм">Рассчитать</a>
+                      </div>
+                      <div class="config-list-item swiper-slide js-config _5" id="config-5">
+                        <h5 class="config-list-item__h">С повышенной безопасностью</h5>
+                        <div class="config-list-item__img-wrapper _5"><img class="config-list-item__img" src="img/config/5-sm.jpg"></div>
+                        <div class="config-list-item__badge">
+                              <svg class="svgsprite _dop-5">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#dop-5"></use>
+                              </svg><span class="config-list-item__badge__text">Антивзлом</span>
+                        </div>
+                        <ul class="config-list-item__togglers">
+                          <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
+                          <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
+                        </ul>
+                        <ul class="config-list-item__list hidden-sm">
+                          <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
+                        </ul>
+                        <div class="js-config__target">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Бронированный стеклопакет 40 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Взломостойкая фурнитура WK1 и WK2 + специальное ударопрочное стекло (защитная плёнка класса А2 или триплекс).</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span> 
+                              (защитная пленка А2)
+                            </li>
+                            <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Фурнитура GU (Германия) противовзломная, класс WK1 </span></li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Ручка L.DESIGN с ключем</span></li>
+                          </ul>
+                        </div>
+                        <div class="js-config__target hidden">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Бронированный стеклопакет 48 мм<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Взломостойкая фурнитура WK1 и WK2 + специальное ударопрочное стекло (защитная плёнка класса А2 или триплекс).</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span> 
+                              (бронированное стекло триплекс)
+                            </li>
+                            <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Фурнитура GU (Германия) противовзломная, класс WK2 </span></li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Ручка L.DESIGN с ключем</span></li>
+                          </ul>
+                        </div>
+                        <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">22 650</span><span class="js-config__target hidden">31 480</span> 
+                            ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">2 265</span><span class="js-config__target hidden">3 148</span> 
+                              ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С повышенной безопасностью Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С повышенной безопасностью Rehau Intelio 80 мм">Рассчитать</a>
+                      </div>
+                      <div class="config-list-item swiper-slide js-config _6" id="config-6">
+                        <h5 class="config-list-item__h">С защитой для детей</h5>
+                        <div class="config-list-item__img-wrapper _6"><img class="config-list-item__img" src="img/config/6-sm.jpg"></div>
+                        <div class="config-list-item__badge">
+                              <svg class="svgsprite _dop-6">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#dop-6"></use>
+                              </svg><span class="config-list-item__badge__text">Детская безопасность</span>
+                        </div>
+                        <ul class="config-list-item__togglers">
+                          <li class="config-list-item__togglers__item _active js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект базовый</span></li>
+                          <li class="config-list-item__togglers__item js-config__toggler"><span class="config-list-item__togglers__item__inner">Комплект плюс+</span></li>
+                        </ul>
+                        <ul class="config-list-item__list hidden-sm">
+                          <li class="config-list-item__list__item"><a class="dashed js-nav-link" href="#tech">Комплекс технологий <span class="nowrap">ЭКО-окон САКСЭС</span></a></li>
+                        </ul>
+                        <div class="js-config__target">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Grazio 70 мм</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Прочный стеклопакет. Противоосколочная пленка<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Обезопасить ребенка — важная задача. Детский замок + специальное ударопрочное стекло, противоосколочная пленка. Такой стеклопакет также защитит и от внешнего воздействия природных невзгод.</span><span class="tooltip__img"><img src="img/config/tooltip-grazio.png"></span></span></span></span></li>
+                            <li class="config-list-item__feats__item">Теплый откос 10 мм</li>
+                            <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                            <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Детский замок</span></li>
+                          </ul>
+                        </div>
+                        <div class="js-config__target hidden">
+                          <ul class="config-list-item__feats">
+                            <li class="config-list-item__feats__item">Rehau Intelio 80 мм </li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Прочный стеклопакет (бронированное стекло триплекс)<span class="tooltip"><i class="icon-help"></i><span class="tooltip__content _img-right"><span class="tooltip__text">Обезопасить ребенка — важная задача. Детский замок + специальное ударопрочное стекло, противоосколочная пленка. Такой стеклопакет также защитит и от внешнего воздействия природных невзгод.</span><span class="tooltip__img"><img src="img/config/tooltip-intelio.png"></span></span></span></span></li>
+                            <li class="config-list-item__feats__item">Теплый откос 16 мм</li>
+                            <li class="config-list-item__feats__item">Фурнитура GU Euro-jet (Германия)</li>
+                            <li class="config-list-item__feats__item">Ручка Rehau L.DESIGN</li>
+                            <li class="config-list-item__feats__item"> <span class="config-list-item__feats__item__accent">Детский замок с тросиком</span></li>
+                          </ul>
+                        </div>
+                        <div class="config-list-item__price"><span class="config-list-item__price__desc">Окно под ключ 130×140 см</span><span class="config-list-item__price__cost"><span class="js-config__target">19 360</span><span class="js-config__target hidden">25 375</span> 
+                            ₽</span><span class="config-list-item__price__payment">Честная рассрочка <span class="config-list-item__price__payment__accent"><span class="js-config__target">1 936</span><span class="js-config__target hidden">2 537</span> 
+                              ₽ / мес</span></span></div><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target" href="#calc" data-action="С защитой для детей Rehau Grazio 70 мм">Рассчитать</a><a class="btn _secondary _solid _for-white config-list-item__btn js-popup js-config__target hidden" href="#calc" data-action="С защитой для детей Rehau Intelio 80 мм">Рассчитать</a>
+                      </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-fraction"><span class="js-config-slider__current">1</span> 
+                из
+                 <span class="js-config-slider__total">1</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -931,7 +941,7 @@
           <div class="bank__content">
             <div class="bank__content__col">
               <div class="bank__payments">
-                <div class="bank__payments__item"><span class="bank__payments__item__accent">0%</span>Первоначальный взнос</div>
+                <div class="bank__payments__item"><span class="bank__payments__item__accent">0%</span>Первоначаль&shy;ный взнос</div>
                 <div class="bank__payments__item"><span class="bank__payments__item__accent">0%</span>Переплат</div>
                 <div class="bank__payments__item"><span class="bank__payments__item__accent">10</span>месяцев рассрочки</div>
               </div>
@@ -1063,7 +1073,7 @@
                   <li class="footer__menu__item _2"> <a class="js-nav-link" href="#eco">Эко-инжиниринг</a></li>
                   <li class="footer__menu__item _3"><a class="js-nav-link" href="#config">Комплектации окон</a></li>
                   <li class="footer__menu__item _4"><a class="js-nav-link" href="#about">Производство</a></li>
-                  <li class="footer__menu__item _5"><a class="js-nav-link" href="#tech">Технологии эко-окон</a></li>
+                  <li class="footer__menu__item _5 hidden-sm"><a class="js-nav-link" href="#tech">Технологии эко-окон</a></li>
                 </ul>
               </div>
             </div>
@@ -1081,6 +1091,6 @@
             </div>
           </div>
         </footer>
-    <script src="assets/js/bundle.js?v=1.0.4"></script>
+    <script src="assets/js/bundle.js?v=1.1.0"></script>
   </body>
 </html>

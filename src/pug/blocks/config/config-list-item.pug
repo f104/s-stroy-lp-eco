@@ -1,6 +1,8 @@
 mixin config-list-item()
-    div(class='config-list-item js-config _' + attributes.type id="config-" + attributes.type)
+    div(class='config-list-item swiper-slide js-config _' + attributes.type id="config-" + attributes.type)
         h5.config-list-item__h=attributes.title
+        div(class='config-list-item__img-wrapper _' + attributes.type)
+            img.config-list-item__img(src=attributes.image)
         .config-list-item__badge
             +svgsprite(attributes.badgeIcon)
             span.config-list-item__badge__text=attributes.badgeText
@@ -9,13 +11,11 @@ mixin config-list-item()
                 span.config-list-item__togglers__item__inner Комплект базовый
             li.config-list-item__togglers__item.js-config__toggler
                 span.config-list-item__togglers__item__inner Комплект плюс+
-        ul.config-list-item__list
+        ul.config-list-item__list.hidden-sm
             li.config-list-item__list__item
                 a.dashed.js-nav-link(href='#tech') Комплекс технологий 
                     span.nowrap ЭКО-окон САКСЭС
         block
-        div(class='config-list-item__img-wrapper _' + attributes.type)
-            img.config-list-item__img(src=attributes.image)
         .config-list-item__price
             span.config-list-item__price__desc Окно под ключ 130×140 см
             span.config-list-item__price__cost
