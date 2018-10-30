@@ -12,6 +12,7 @@
         height: 62px;
     }
     @include media-breakpoint-up(lg) {
+        box-shadow: none;
         height: 70px;
     }
     &__inner {
