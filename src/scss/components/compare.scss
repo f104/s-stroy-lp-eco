@@ -173,12 +173,12 @@
     padding-top: 23px;
     padding-bottom: 48px;
     @include media-breakpoint-up(md) {
-        background-image: url(/img/compare/bg-md-o.jpg);
+        /*background-image: url(/img/compare/bg-md-o.jpg);*/
         padding-top: 40px;
         padding-bottom: 56px;
     }
     @include media-breakpoint-up(lg) {
-        background-image: url(/img/compare/bg-lg-o.jpg);
+        /*background-image: url(/img/compare/bg-lg-o.jpg);*/
         padding-top: 43px;
         padding-bottom: 59px;
     }
@@ -427,15 +427,15 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url(/img/compare/bg-sm.jpg);
+        background-image: url(/img/compare/bg-sm-o.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         @include media-breakpoint-up(md) {
-            background-image: url(/img/compare/bg-md.jpg);
+            background-image: url(/img/compare/bg-md-o.jpg);
         }
         @include media-breakpoint-up(lg) {
-            background-image: url(/img/compare/bg-lg.jpg);
+            background-image: url(/img/compare/bg-lg-o.jpg);
         }
         &:after {
             content: '';
