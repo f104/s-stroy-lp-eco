@@ -288,9 +288,9 @@
                 background-color: $color;
             }
             #{$root}__img-wrapper {
-                background-image: url(/img/config/#{$key}-md.jpg);
+                background-image: url(/img/config/#{$key}-md-o.jpg);
                 @include media-breakpoint-up(lg) {
-                    background-image: url(/img/config/#{$key}-lg.jpg);
+                    background-image: url(/img/config/#{$key}-lg-o.jpg);
                 }
             }
         }
