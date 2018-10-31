@@ -3,7 +3,9 @@
 @import "custom-reset";
 
 // External
-/*@import "ven/src/scss/owl.carousel";*/
+@import "vendor/jquery.fancybox.css";
+@import "vendor/swiper.css";
+@import "vendor/jquery.jgrowl.css";
 
 // Base
 @import "mixins";

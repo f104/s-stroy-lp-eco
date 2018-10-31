@@ -36,7 +36,7 @@ function getConfig() {
 gulp.task('default', ['build']);
 gulp.task('build', (done) => {
     global.isDev = false;
-    $.sequence('clean:dist', 'icons', ['pug', 'sass', 'js'], 'copy:static', done);
+    $.sequence('clean:dist', 'icons', 'copy:static', ['pug', 'sass', 'js'], done);
 });
 gulp.task('serve', $.sequence('clean', 'icons', ['pug', 'sass', 'js'], 'browsersync', 'watch'));
 
@@ -44,7 +44,12 @@ gulp.task('serve', $.sequence('clean', 'icons', ['pug', 'sass', 'js'], 'browsers
 gulp.task('sass', () => {
     const config = getConfig();
     const dist = global.isDev ? './tmp/assets/css/' : './eco52.ru/assets/css/';
-
+    
+    gulp.src(['./src/scss/vendor/**/*'])
+        .pipe(gulp.dest(dist + 'vendor/'));
+    gulp.src(['./src/scss/fonts/**/*'])
+        .pipe(gulp.dest(dist + 'fonts/'));
+    
     return gulp.src('./src/scss/main.scss')
         .pipe($.if(global.isDev || config.prodmaps, $.sourcemaps.init())).on('error', errorHandler('sass', 'sourcemaps:init'))
         .pipe($.sass({includePaths: "node_modules"})).on('error', errorHandler('sass', 'compile'))
