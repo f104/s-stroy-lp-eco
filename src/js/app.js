@@ -168,7 +168,6 @@ var app = {
                 autoHeight: true,
 //                effect: 'fade',
                 spaceBetween: 8,
-                allowTouchMove: false,
                 pagination: {
                     el: '.config-list .swiper-pagination',
                     type: 'bullets',
