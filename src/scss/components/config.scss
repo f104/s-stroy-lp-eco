@@ -92,6 +92,10 @@
             margin-bottom: 0;
         }
     }
+    .swiper-container {
+        padding-left: map-get($container-paddings, sm);
+        padding-right: map-get($container-paddings, sm);
+    }
     .swiper-wrapper {
         @include media-breakpoint-up(md) {
             display: block;
@@ -123,10 +127,10 @@
 .config-list-item {
     $root: &;
     background-color: #EDF6FC;
-    padding-top: 18px;
-    padding-left: map-get($container-paddings, sm);
-    padding-right: map-get($container-paddings, sm);
-    padding-bottom: 36px;
+    padding-top: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 18px;
     overflow: hidden;
     @include media-breakpoint-up(md) {
         background-color: transparent;
@@ -140,12 +144,17 @@
     }
     &__h {
         font-weight: 600;
-        font-size: 19px;
-        margin-bottom: 18px;
+        font-size: 14px;
+        margin-bottom: 13px;
+        height: 36px;
+        display: flex;
+        align-items: center;
         @include media-breakpoint-up(md) {
             font-size: 25px;
             margin-bottom: 27px;
             width: 460px;
+            height: auto;
+            display: block;
         }
         @include media-breakpoint-up(lg) {
             width: auto;
@@ -176,7 +185,7 @@
         }
     }
     &__togglers {
-        margin-bottom: 22px;
+        margin-bottom: 18px;
         @include media-breakpoint-up(md) {
             margin-bottom: 50px;
         }
@@ -200,6 +209,10 @@
             }
             &__inner {
                 border-bottom: 1px dashed;
+                text-transform: capitalize;
+                @include media-breakpoint-up(md) {
+                    text-transform: none;
+                }
             }
             @include ie10up {
                 height: 27px;
@@ -215,6 +228,18 @@
                 cursor: default;
                 pointer-events: none;
             }
+            &._title {
+                color: $color-text;
+                cursor: default;
+                padding: 0;
+                border-width: 0;
+                &:hover {
+                    background-color: transparent;
+                }
+                @include media-breakpoint-up(md) {
+                    display: none;
+                }
+            }
             @include media-breakpoint-up(md) {
                 font-size: 16px;
                 line-height: 36px;
@@ -227,9 +252,9 @@
         }
     }
     &__img-wrapper {
-        margin-left: - map-get($container-paddings, sm);
-        margin-right: - map-get($container-paddings, sm);
-        margin-bottom: 20px;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 15px;
         &:after {
             content: '';
             display: block;
@@ -330,9 +355,9 @@
         }
     }
     &__feats {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 9px;
         @include media-breakpoint-up(md) {
             font-size: 16px;
             line-height: 23px;
@@ -347,9 +372,10 @@
             padding-right: 0;
         }
         &__item {
-            padding-left: 30px;
-            margin-bottom: 15px;
+            padding-left: 25px;
+            margin-bottom: 9px;
             @include media-breakpoint-up(md) {
+                padding-left: 30px;
                 margin-bottom: 20px;
             }
             &:last-child {
@@ -360,8 +386,11 @@
                 font-family: 'fontello';
                 position: absolute;
                 left: 0;
-                font-size: 20px;
                 color: $color-secondary;
+                font-size: 15px;
+                @include media-breakpoint-up(md) {
+                    font-size: 20px;
+                }
             }
             &__accent {
                 font-weight: 600;
@@ -376,14 +405,67 @@
         }
     }
     &__feats-wrapper {
-        @include media-breakpoint-up(lg) {
-            display: flex;
-            align-items: flex-end;
+        height: 95px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        &:after {
+            content: '';
+            position: absolute;
+            left: -15px;
+            right: -15px;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(to top, #EDF6FC 3.94%, rgba(237, 246, 252, 0) 96.2%);
+            @include transition(opacity);
+        }
+        &._active {
+            &:after {
+                opacity: 0;
+            }
+        }
+        @include media-breakpoint-up(md) {
+            height: auto !important;
+            margin-bottom: 0;
+            &:after {
+                content: none;
+            }
+        }
+        &__inner {
+            @include media-breakpoint-up(lg) {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+    &__cut {
+        font-weight: 500;
+        font-size: 12px;
+        color: $color-primary;
+        margin-bottom: 23px;
+        @include transition(opacity);
+        &__inner {
+            cursor: pointer;
+            border-bottom: 1px dashed;
+            &:hover {
+                opacity: .8;
+            }
+        }
+        [class^="icon-"]:before {
+            @include transition(transform);
+        }
+        &._active {
+            [class^="icon-"]:before {
+                transform: rotate(.5turn);
+            }
+        }
+        @include media-breakpoint-up(md) {
+            display: none;
         }
     }
     &__price {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
         @include media-breakpoint-up(md) {
+            margin-bottom: 30px;
             text-align: right;
             position: absolute;
             top: 106px;
@@ -392,17 +474,18 @@
         &__desc {
             display: block;
             font-weight: 500;
-            line-height: 21px;
-            font-size: 14px;
+            line-height: 18px;
+            font-size: 12px;
             color: $color-primary;
             @include media-breakpoint-up(md) {
                 font-size: 15px;
+                line-height: 21px;
             }
         }
         &__cost {
             display: block;
             font-weight: 700;
-            font-size: 36px;
+            font-size: 29px;
             color: $color-primary;
             margin-bottom: 8px;
             @include media-breakpoint-up(md) {
@@ -411,8 +494,8 @@
         }
         &__payment {
             display: inline-block;
-            font-size: 14px;
-            line-height: 21px;
+            font-size: 12px;
+            line-height: 18px;
             font-weight: 500;
             background-color: $color-bg;
             color: $color-secondary;
@@ -426,6 +509,8 @@
             }
             @include media-breakpoint-up(md) {
                 right: -8px;
+                font-size: 14px;
+                line-height: 21px;
             }
         }
     }

@@ -128,6 +128,36 @@ var app = {
                 $target.toggleClass('hidden');
             });
         });
+        let heightClosed = 95;
+        let duration = 200;
+        let sliderEl = document.querySelector('.config-list .swiper-container');
+        $('.js-config__cut').each(function () {
+            let $cutParent = $(this).parent();
+            let $target = $cutParent.siblings('.js-config__feats');
+            let textShow = $(this).data('show');
+            let textHide = $(this).data('hide');
+            $(this).on('click', function () {
+                let heightOpened = $target.find('.js-config__feats__inner').outerHeight();
+                $cutParent.toggleClass('_active');
+                if ($cutParent.hasClass('_active')) {
+                    $target.animate({height: heightOpened}, duration, function () {
+                        if (sliderEl.swiper) {
+                            sliderEl.swiper.updateAutoHeight();
+                        }
+                    });
+                    $target.addClass('_active');
+                    $(this).text(textHide);
+                } else {
+                    $target.animate({height: heightClosed}, duration, function () {
+                        if (sliderEl.swiper) {
+                            sliderEl.swiper.updateAutoHeight();
+                        }
+                    });
+                    $target.removeClass('_active');
+                    $(this).text(textShow);
+                }
+            });
+        });
     },
 
     initConfigSlider: function () {
@@ -137,6 +167,7 @@ var app = {
             new Swiper(el, {
                 autoHeight: true,
 //                effect: 'fade',
+                spaceBetween: 8,
                 pagination: {
                     el: '.config-list .swiper-pagination',
                     type: 'bullets',

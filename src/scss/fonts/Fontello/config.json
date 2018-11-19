@@ -327,6 +327,12 @@
       "search": [
         "menu-close"
       ]
+    },
+    {
+      "uid": "8704cd847a47b64265b8bb110c8b4d62",
+      "css": "down",
+      "code": 59416,
+      "src": "entypo"
     }
   ]
 }

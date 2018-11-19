@@ -7,10 +7,15 @@ mixin config-list-item()
             +svgsprite(attributes.badgeIcon)
             span.config-list-item__badge__text=attributes.badgeText
         ul.config-list-item__togglers
+            li.config-list-item__togglers__item._title Комплект:
             li.config-list-item__togglers__item._active.js-config__toggler
-                span.config-list-item__togglers__item__inner Комплект базовый
+                span.config-list-item__togglers__item__inner 
+                    span.hidden-sm Комплект 
+                    | базовый
             li.config-list-item__togglers__item.js-config__toggler
-                span.config-list-item__togglers__item__inner Комплект плюс+
+                span.config-list-item__togglers__item__inner 
+                    span.hidden-sm Комплект 
+                    | плюс+
         ul.config-list-item__list.hidden-sm
             li.config-list-item__list__item
                 a.dashed.js-nav-link(href='#tech') Комплекс технологий 
