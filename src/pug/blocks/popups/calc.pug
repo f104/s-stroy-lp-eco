@@ -11,6 +11,11 @@ div(id='calc')
                     input(name='form_id' value='5' hidden)
                     input(name='form_name' value='Выбор комплектации' hidden)
                     input(name='action' hidden)
+                    input(
+                        name='goals_ga' 
+                        hidden 
+                        value='{"event":"form_sent5","eventCategory":"lead","eventAction":"svoyvariant"}'
+                    )
                     input.input.js-mask(name='phone' required autocomplete='off')
                     button.btn Оставить заявку
                 .form-desc Оставьте ваш номер телефона и мы перезвоним вам, а также согласуем бесплатный выезд специалиста в удобное для вас время.

@@ -28,6 +28,7 @@ const forms = {
                             forms.showMessage();
                             $form[0].reset();
                             $.fancybox.close();
+                            forms.goalsGA($form);
                             app.document.trigger(app.submitEventName, {$form: $form});
                         } else if (data['msg']) {
                             console.log(data['msg']);
@@ -69,6 +70,14 @@ const forms = {
         });
         im.mask(selector);
     },
+    
+    goalsGA: function ($form) {
+        let $input = $form.find('[name="goals_ga"]');
+        if ($input.length > 0) {
+            let dataLayer = window.dataLayer = window.dataLayer || [];
+            dataLayer.push(JSON.parse($input.val()));
+        }
+    }
 
 };
 

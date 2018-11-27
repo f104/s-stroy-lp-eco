@@ -38,5 +38,10 @@ section.eco(id="eco")
                         input(name='email3' value='info@example.com' hidden)
                         input(name='form_id' value='4' hidden)
                         input(name='form_name' value='Вызов специалиста на эко-инжиниринг (inline)' hidden)
+                        input(
+                            name='goals_ga' 
+                            hidden 
+                            value='{"event":"form_sent4","eventCategory":"lead","eventAction":"ekoinzhiniring"}'
+                        )
                         input.input._secondary.js-mask(name='phone' required autocomplete='off')
                         button.btn._secondary Оставить заявку
