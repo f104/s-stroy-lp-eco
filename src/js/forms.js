@@ -76,6 +76,7 @@ const forms = {
         if ($input.length > 0) {
             let dataLayer = window.dataLayer = window.dataLayer || [];
             dataLayer.push(JSON.parse($input.val()));
+            console.log(JSON.parse($input.val()));
         }
     }
 
